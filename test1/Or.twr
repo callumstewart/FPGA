@@ -2,12 +2,12 @@
 Release 14.2 Trace  (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
-3 -fastpaths -xml Or.twx Or.ncd -o Or.twr Or.pcf
+G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml Or.twx Or.ncd -o Or.twr Or.pcf -ucf Or.ucf
 
 Design file:              Or.ncd
 Physical constraint file: Or.pcf
-Device,package,speed:     xc3s250e,cp132,-5 (PRODUCTION 1.27 2012-07-09)
+Device,package,speed:     xc3s250e,cp132,-4 (PRODUCTION 1.27 2012-07-09)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -43,12 +43,11 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A              |C              |    5.219|
-B              |C              |    5.384|
+A              |C              |    4.835|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Sep 24 23:00:50 2012 
+Analysis completed Tue Sep 25 02:03:29 2012 
 --------------------------------------------------------------------------------
 
 Trace Settings:

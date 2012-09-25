@@ -21,9 +21,10 @@
 module Or(
     input A,
     input B,
-    output C
+	 input C,	 
+    output X
     );
 
-assign C = (A||B) & A;
+assign X = (A||B||C) && (A&B) || (A&C) || ((A^C)||B);
 
 endmodule
