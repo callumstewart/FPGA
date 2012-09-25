@@ -56,3 +56,13 @@ vcd < <dumpfile <file_name>> | dumpflush | dumpon | dumpoff | <dumpvars -m <path
 virtualbus add <name> [-into <id>] [-reverse] [-radix <radix>] [-color <color>]
 wave <add [options] [<object_name>...]> | <log [options] [<object_name>...]>
 wcfg new | open <fileName> | save <fileName> | select <fileName>
+ISim P.28xd (signature 0x1048c146)
+----------------------------------------------------------------------
+INFO:Security:65 - Your license for 'ISIM' is for trial use only.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

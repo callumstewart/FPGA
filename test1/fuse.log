@@ -8,13 +8,13 @@ Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/test1/Or_Test.v" into libra
 Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 117828 KB
-Fuse CPU Usage: 826 ms
+Fuse Memory Usage: 117380 KB
+Fuse CPU Usage: 732 ms
 Compiling module Or
 Compiling module Or_Test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
 Built simulation executable C:/Users/Callum/Desktop/FPGA/test1/Or_Test_isim_beh.exe
-Fuse Memory Usage: 122416 KB
-Fuse CPU Usage: 1029 ms
+Fuse Memory Usage: 121968 KB
+Fuse CPU Usage: 904 ms

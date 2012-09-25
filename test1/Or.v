@@ -24,6 +24,6 @@ module Or(
     output C
     );
 
-assign C = A||B;
+assign C = (A||B) & A;
 
 endmodule
