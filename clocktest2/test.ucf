@@ -1,0 +1,11 @@
+NET "reset" LOC = A7;
+
+
+# PlanAhead Generated IO constraints 
+
+NET "clock" IOSTANDARD = LVCMOS25;
+
+# PlanAhead Generated physical constraints 
+
+NET "clkout" LOC = P7;
+NET "clock" LOC = B8;

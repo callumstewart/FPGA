@@ -1,0 +1,18 @@
+Running: G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Callum/Desktop/FPGA/clocktest2/test_isim_beh.exe -prj C:/Users/Callum/Desktop/FPGA/clocktest2/test_beh.prj work.test work.glbl 
+ISim P.28xd (signature 0x1048c146)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/clocktest2/test.v" into library work
+Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 117640 KB
+Fuse CPU Usage: 780 ms
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 2 Verilog Units
+Built simulation executable C:/Users/Callum/Desktop/FPGA/clocktest2/test_isim_beh.exe
+Fuse Memory Usage: 122228 KB
+Fuse CPU Usage: 904 ms

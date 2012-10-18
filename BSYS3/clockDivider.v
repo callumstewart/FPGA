@@ -18,32 +18,32 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module clockDivider(clk,reset,clkDivOut);
-    input clk;
-    input reset;
-    output clkDivOut;
-	 reg clkDivOut;
+
 	 
-	 parameter period = 24;
-	 parameter halfPeriod = period/2;
-	 reg[3:0] countValue;
+	module clkDivider(clk,reset,clkDivOut);
+   input clk,reset;
+   output clkDivOut;
+	reg[30:0] counter;
 	 
-	 always@(posedge clk)
-		begin
-		if (reset) begin
-			countValue = 0;
-			clkDivOut <= 0;
+	 always @(posedge clk or posedge reset)
+	 begin
+	 if(reset)
+	 counter<=30'd0;
+	 
+	  else
+		if(counter==30'd250000)
+		counter<=30'd0;
+		
+		
+		else
+		counter<=counter+1;
 		end
-		else begin
-			if (countValue == period -1) begin
-			countValue = 0;
-			clkDivOut <= 0;
-			end
-			else countValue = countValue +1;
-		if (countValue == halfPeriod) clkDivOut <= 1;
-			end
-		end
-    
+
+assign clkDivOut = (counter == 30'd250000);
+
+
+
+
 
 
 endmodule

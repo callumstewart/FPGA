@@ -21,23 +21,23 @@
 module clkDivider(clk,reset,clkDivOut);
    input clk,reset;
    output clkDivOut;
-	reg[15:0] counter;
+	reg[30:0] counter;
 	 
 	 always @(posedge clk or posedge reset)
 	 begin
 	 if(reset)
-	 counter<=16'd0;
+	 counter<=30'd0;
 	 
 	  else
-		if(counter==16'd5000)
-		counter<=16'd0;
+		if(counter==30'd25000000)
+		counter<=30'd0;
 		
 		
 		else
 		counter<=counter+1;
 		end
 
-assign clkDivOut = (counter == 16'd5000);
+assign clkDivOut = (counter == 30'd25000000);
 
 
 endmodule

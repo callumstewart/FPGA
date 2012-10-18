@@ -69,13 +69,15 @@ full_adder fa3(
  	.sum(sum[3])
  	);
 	
+	assign sum[4] = carry_out[4];
+	
 	seg7 seggy(
-	.bcd(sum[3:0]),
+	.bcd(sum[4:0]),
 	.led(segw),
 	.led2(segx)
 	);
 	
-	clockDivider clky (
+	clkDivider clky (
     .clk(mclk), 
     .reset(rs), 
     .clkDivOut(clkDiv)
@@ -89,14 +91,9 @@ full_adder fa3(
     .ledx(segz)
     );
  
-	always @ (posedge mclk)
-	begin
-	if(rs)begin
-	//nout
-	end
-	end
+	
 // assign the final sum bit.
-assign sum[4] = carry_out[4];
+
 assign seg = segz;
 assign anode = anodefinal;
 endmodule

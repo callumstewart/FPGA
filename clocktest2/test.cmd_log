@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/clocktest2/test.xst" -ofn "C:/Users/Callum/Desktop/FPGA/clocktest2/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/clocktest2/test.xst" -ofn "C:/Users/Callum/Desktop/FPGA/clocktest2/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/clocktest2/test.xst" -ofn "C:/Users/Callum/Desktop/FPGA/clocktest2/test.syr" 
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/clocktest2/test.xst" -ofn "C:/Users/Callum/Desktop/FPGA/clocktest2/test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s100e-cp132-5 test.ngc test.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -t 1 test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc3s100e-cp132-5 test.ngc test.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o test_map.ncd test.ngd test.pcf 
+par -w -intstyle ise -ol high -t 1 test_map.ncd test.ncd test.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test.twx test.ncd -o test.twr test.pcf -ucf test.ucf 
+bitgen -intstyle ise -f test.ut test.ncd 

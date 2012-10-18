@@ -5,7 +5,7 @@ G:\Xilinx\14.2\ISE_DS\ISE\.
    "rca2" is an NCD, version 3.2, device xc3s100e, package cp132, speed -5
 Opened constraints file rca2.pcf.
 
-Wed Oct 03 13:15:48 2012
+Thu Oct 18 19:56:56 2012
 
 G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No rca2.ncd 
 
@@ -88,14 +88,7 @@ There were 0 CONFIG constraint(s) processed from rca2.pcf.
 
 
 Running DRC.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net seggy/led_not0001 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net seggy/led2_mux0000<0> is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
-individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.
 Creating bit map...
 Saving bit stream in "rca2.bit".
 Bitstream generation is complete.

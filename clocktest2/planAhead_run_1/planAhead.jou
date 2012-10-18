@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Thu Oct 18 14:40:49 2012
+# Process ID: 4020
+# Log file: C:/Users/Callum/Desktop/FPGA/clocktest2/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Callum/Desktop/FPGA/clocktest2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Callum/Desktop/FPGA/clocktest2/pa.fromHdl.tcl
+set_property is_loc_fixed false [get_ports [list  clock]]
+set_property iostandard LVCMOS25 [get_ports [list clock]]
+startgroup
+set_property package_pin P7 [get_ports clkout]
+endgroup
+set_property is_loc_fixed false [get_ports [list  clkout]]
+set_property is_loc_fixed true [get_ports [list  clkout]]
+set_property is_loc_fixed true [get_ports [list  clock]]
+set_property is_loc_fixed false [get_ports [list  clock]]
+set_property is_loc_fixed true [get_ports [list  clock]]
+save_design

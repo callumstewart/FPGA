@@ -1,0 +1,34 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Callum/Desktop/FPGA/BSYS3/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Callum/Desktop/FPGA/BSYS3/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "seg7.v" in library work
+ERROR:HDLCompilers:26 - "seg7.v" line 29 expecting 'IDENTIFIER', found '2'
+ERROR:HDLCompilers:26 - "seg7.v" line 38 unexpected token: '2'
+ERROR:HDLCompilers:26 - "seg7.v" line 38 unexpected token: '='
+Module <seg7> compiled
+ERROR:HDLCompilers:26 - "seg7.v" line 38 expecting 'endmodule', found '('
+Analysis of file <"seg7.prj"> failed.
+--> 
+
+Total memory usage is 179600 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

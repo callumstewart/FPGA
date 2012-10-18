@@ -21,7 +21,7 @@
 module ledflash(
     input mclk,
     input rs,
-    output led
+    output reg led
     );
 	 
 	 wire clkDivOut;
@@ -32,15 +32,19 @@ module ledflash(
     .clkDivOut(clkDivOut)
     );
 	
-	reg ledreg;
-	always @(posedge clkDivOut)
+	
+	always @(posedge clkDivOut or posedge rs)
 	begin
 		if (rs)
-			ledreg <=0;
+			begin
+			led <=0;
+			end
 		else
-			ledreg <= ~led;
-		end
+			begin
+			led <= ~led;
+			end
+	end
 	
 
-assign led = ledreg;
+
 endmodule

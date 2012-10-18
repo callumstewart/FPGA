@@ -27,16 +27,24 @@ module switcher(clkDiv,led1,led2,anode,ledx);
 	 
 	 reg [3:0] anode;
 	 reg [7:0] ledx;
+	 reg S;
 	 
-	 
-	 always @(clkDiv) begin
-	 if(clkDiv == 0) begin
-		anode <= 4'b1000;
-		ledx  <= led1;
+	 initial begin
+	 S = 1'b0;
 	 end
-	 else begin
+	 
+	 
+	 always @(posedge clkDiv) begin
+	 if(S == 0) begin
+		anode <= 4'b1011;
+		ledx  <= led1;
+		S <= 1'b1;
+	 end
+	 else if(S == 1)
+	 begin
 	   anode <= 4'b0111;
 		ledx  <= led2;
+		S <= 1'b0;
 	end
 	end
     
