@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/test1/Or_Test_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/test1/Or_Test_beh.prj" "work.Or_Test" "work.glbl" 
+Running: G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Callum/Desktop/FPGA/test1/Or_Test_isim_beh.exe -prj C:/Users/Callum/Desktop/FPGA/test1/Or_Test_beh.prj work.Or_Test work.glbl 
 ISim P.28xd (signature 0x1048c146)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -7,14 +7,15 @@ Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/test1/Or.v" into library wo
 Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/test1/Or_Test.v" into library work
 Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Callum/Desktop/FPGA/test1/Or_Test.v" Line 35: Port X is not connected to this instance
 Completed static elaboration
-Fuse Memory Usage: 117380 KB
-Fuse CPU Usage: 732 ms
+Fuse Memory Usage: 117188 KB
+Fuse CPU Usage: 748 ms
 Compiling module Or
 Compiling module Or_Test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
 Built simulation executable C:/Users/Callum/Desktop/FPGA/test1/Or_Test_isim_beh.exe
-Fuse Memory Usage: 121968 KB
-Fuse CPU Usage: 904 ms
+Fuse Memory Usage: 121776 KB
+Fuse CPU Usage: 951 ms

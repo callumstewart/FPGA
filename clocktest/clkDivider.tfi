@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+clkDivider instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .clkDivOut(clkDivOut)
+    );
+
+

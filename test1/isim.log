@@ -1,68 +1,13 @@
 ISim log file
 Running: C:\Users\Callum\Desktop\FPGA\test1\Or_Test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Callum/Desktop/FPGA/test1/Or_Test_isim_beh.wdb 
 ISim P.28xd (signature 0x1048c146)
-----------------------------------------------------------------------
-INFO:Security:65 - Your license for 'ISIM' is for trial use only.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.28xd (signature 0x1048c146)
-----------------------------------------------------------------------
-INFO:Security:65 - Your license for 'ISIM' is for trial use only.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# help
-Usage: help [<command_name>]
-Type "help <command>" for help on commands.
-Valid commands are: bp, cls, describe, divider, dump, group, help, hwcosim, init, isim, marker, onerror, put, quit, restart, resume, run, saif, scope, sdfanno, show, specify, step, stop, test, vcd, virtualbus, wave, wcfg
-bp < list | <add <file_name> <line_number>> | <remove <file_name> <line_number>> | <del <index_list>> | clear >
-cls
-describe <object_name>
-divider add <name> [-into <id>] [-color <color>]
-dump
-group add <name> [-into <id>]
-help [<command_name>]
-hwcosim < set <property> <value> > | < get <propery> > 
-init
-isim <  < <ptrace|ltrace> <on|off> > | < set <userunit|arraydisplaylength|maxtraceablesize|radix> <value> > | < get <userunit|arraydisplaylength|maxtraceablesize|radix> > | < condition <list | <add <options>> | <remove <options>> > | < force < <add <options>> | <remove <options>> > >
-marker add <time>
-onerror {<script>}
-put <hdl_object_name> <value> [-radix <type>]
-quit [-f | -s]
-restart
-resume
-run [ all | continue | <<time> [<unit>]> ]
-saif < <open [-scope <path_name>] [-file <file_name>] [-level <nesting_level>] [-allnets] > |  close >
-scope [.. | <path_name>]
-sdfanno <-min|-typ|-max> <file_name> [-nowarn] [-noerror] [-root <path_name>]
-show < time | port | scope | signal | variable | constant | <child [-r]> | <<driver|load|value> <hdl_object_name>> >
-specify < <pathpulse <int> [<int>]> | <pulsestyle <onevent|ondetect>> | showcancelled | noshowcancelled >
-step
-stop
-test <hdl_object_name> <value> [-radix <type>]
-vcd < <dumpfile <file_name>> | dumpflush | dumpon | dumpoff | <dumpvars -m <path_name> [-l <level>]> | <dumplimit <size>> >
-virtualbus add <name> [-into <id>] [-reverse] [-radix <radix>] [-color <color>]
-wave <add [options] [<object_name>...]> | <log [options] [<object_name>...]>
-wcfg new | open <fileName> | save <fileName> | select <fileName>
-ISim P.28xd (signature 0x1048c146)
-----------------------------------------------------------------------
-INFO:Security:65 - Your license for 'ISIM' is for trial use only.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.

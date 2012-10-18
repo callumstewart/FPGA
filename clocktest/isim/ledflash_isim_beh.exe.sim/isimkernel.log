@@ -1,0 +1,29 @@
+Command line:
+   ledflash_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50045
+
+Tue Oct 09 18:28:32 2012
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 503.087 Meg
+
+ Total Signals          : 20
+ Total Nets             : 17
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 114
+Total Line Count : 28
+
+ Total Simulation Time: 0.187201 sec
+
+ Current Memory Usage: 504.136 Meg
+
+Tue Oct 09 18:29:19 2012
+

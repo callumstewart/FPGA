@@ -1,0 +1,68 @@
+
+****** PlanAhead v14.2 (64-bit)
+  **** Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from G:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [G:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [G:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/Callum/Desktop/FPGA/Basys2/pa.fromHdl.tcl
+# create_project -name Basys2 -dir "C:/Users/Callum/Desktop/FPGA/Basys2/planAhead_run_1" -part xc3s100ecp132-5
+Parsing template File [G:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Finished parsing template File [G:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/verilog.xml].
+Parsing template File [G:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Finished parsing template File [G:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/vhdl.xml].
+Parsing template File [G:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+Finished parsing template File [G:/Xilinx/14.2/ISE_DS/ISE/data/projnav/templates/ucf.xml].
+create_project: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 401.094 ; gain = 59.680
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "rca.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {E:/Users/callumstewart/Desktop/Desktop2/Verilog2/RCA/full_adder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {E:/Users/callumstewart/Desktop/Desktop2/Verilog2/RCA/rca.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top rca $srcset
+# add_files [list {rca.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s100ecp132-5
+Using Verific elaboration
+Parsing VHDL file "G:/Xilinx/14.2/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "E:/Users/callumstewart/Desktop/Desktop2/Verilog2/RCA/full_adder.v" into library work
+Analyzing Verilog file "E:/Users/callumstewart/Desktop/Desktop2/Verilog2/RCA/rca.v" into library work
+INFO: [Designutils 20-910] Reading macro library G:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [G:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [G:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from G:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from G:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from G:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from G:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from G:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : G:/Xilinx/14.2/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library G:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library G:/Xilinx/14.2/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'seg[7]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:20]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'seg[6]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:21]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'seg[5]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:22]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'seg[4]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:23]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'seg[3]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:24]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'seg[2]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:25]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'seg[1]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:26]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'seg[0]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:27]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'anode[0]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:29]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'anode[1]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:30]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'anode[2]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:31]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'anode[3]' [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf:32]
+Finished Parsing UCF File [C:/Users/Callum/Desktop/FPGA/Basys2/rca.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 56671135
+open_rtl_design: Time (s): elapsed = 00:00:25 . Memory (MB): peak = 485.965 ; gain = 84.809

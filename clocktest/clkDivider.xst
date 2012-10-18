@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Callum/Desktop/FPGA/clocktest/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Callum/Desktop/FPGA/clocktest/xst"
+elaborate
+-ifn clkDivider.prj
+-ifmt mixed

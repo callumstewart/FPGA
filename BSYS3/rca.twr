@@ -1,0 +1,327 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml rca.twx rca.ncd -o rca.twr rca.pcf -ucf rca.ucf
+
+Design file:              rca.ncd
+Physical constraint file: rca.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock A<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+seg<0>      |   11.711(F)|seggy/led_not0001 |   0.000|
+seg<1>      |   11.691(F)|seggy/led_not0001 |   0.000|
+seg<2>      |   11.668(F)|seggy/led_not0001 |   0.000|
+seg<3>      |   11.951(F)|seggy/led_not0001 |   0.000|
+seg<4>      |   11.655(F)|seggy/led_not0001 |   0.000|
+seg<5>      |   11.711(F)|seggy/led_not0001 |   0.000|
+seg<6>      |   11.661(F)|seggy/led_not0001 |   0.000|
+seg<7>      |   11.668(F)|seggy/led_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock A<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+seg<0>      |   11.891(F)|seggy/led_not0001 |   0.000|
+seg<1>      |   11.871(F)|seggy/led_not0001 |   0.000|
+seg<2>      |   11.848(F)|seggy/led_not0001 |   0.000|
+seg<3>      |   12.131(F)|seggy/led_not0001 |   0.000|
+seg<4>      |   11.835(F)|seggy/led_not0001 |   0.000|
+seg<5>      |   11.891(F)|seggy/led_not0001 |   0.000|
+seg<6>      |   11.841(F)|seggy/led_not0001 |   0.000|
+seg<7>      |   11.848(F)|seggy/led_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock A<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+seg<0>      |   11.380(F)|seggy/led_not0001 |   0.000|
+seg<1>      |   11.360(F)|seggy/led_not0001 |   0.000|
+seg<2>      |   11.337(F)|seggy/led_not0001 |   0.000|
+seg<3>      |   11.620(F)|seggy/led_not0001 |   0.000|
+seg<4>      |   11.324(F)|seggy/led_not0001 |   0.000|
+seg<5>      |   11.380(F)|seggy/led_not0001 |   0.000|
+seg<6>      |   11.330(F)|seggy/led_not0001 |   0.000|
+seg<7>      |   11.337(F)|seggy/led_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock A<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+seg<0>      |   10.097(F)|seggy/led_not0001 |   0.000|
+seg<1>      |   10.077(F)|seggy/led_not0001 |   0.000|
+seg<2>      |   10.054(F)|seggy/led_not0001 |   0.000|
+seg<3>      |   10.337(F)|seggy/led_not0001 |   0.000|
+seg<4>      |   10.041(F)|seggy/led_not0001 |   0.000|
+seg<5>      |   10.097(F)|seggy/led_not0001 |   0.000|
+seg<6>      |   10.047(F)|seggy/led_not0001 |   0.000|
+seg<7>      |   10.054(F)|seggy/led_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock B<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+seg<0>      |   12.278(F)|seggy/led_not0001 |   0.000|
+seg<1>      |   12.258(F)|seggy/led_not0001 |   0.000|
+seg<2>      |   12.235(F)|seggy/led_not0001 |   0.000|
+seg<3>      |   12.518(F)|seggy/led_not0001 |   0.000|
+seg<4>      |   12.222(F)|seggy/led_not0001 |   0.000|
+seg<5>      |   12.278(F)|seggy/led_not0001 |   0.000|
+seg<6>      |   12.228(F)|seggy/led_not0001 |   0.000|
+seg<7>      |   12.235(F)|seggy/led_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock B<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+seg<0>      |   11.602(F)|seggy/led_not0001 |   0.000|
+seg<1>      |   11.582(F)|seggy/led_not0001 |   0.000|
+seg<2>      |   11.559(F)|seggy/led_not0001 |   0.000|
+seg<3>      |   11.842(F)|seggy/led_not0001 |   0.000|
+seg<4>      |   11.546(F)|seggy/led_not0001 |   0.000|
+seg<5>      |   11.602(F)|seggy/led_not0001 |   0.000|
+seg<6>      |   11.552(F)|seggy/led_not0001 |   0.000|
+seg<7>      |   11.559(F)|seggy/led_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock B<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+seg<0>      |   10.876(F)|seggy/led_not0001 |   0.000|
+seg<1>      |   10.856(F)|seggy/led_not0001 |   0.000|
+seg<2>      |   10.833(F)|seggy/led_not0001 |   0.000|
+seg<3>      |   11.116(F)|seggy/led_not0001 |   0.000|
+seg<4>      |   10.820(F)|seggy/led_not0001 |   0.000|
+seg<5>      |   10.876(F)|seggy/led_not0001 |   0.000|
+seg<6>      |   10.826(F)|seggy/led_not0001 |   0.000|
+seg<7>      |   10.833(F)|seggy/led_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock B<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+seg<0>      |   10.441(F)|seggy/led_not0001 |   0.000|
+seg<1>      |   10.421(F)|seggy/led_not0001 |   0.000|
+seg<2>      |   10.398(F)|seggy/led_not0001 |   0.000|
+seg<3>      |   10.681(F)|seggy/led_not0001 |   0.000|
+seg<4>      |   10.385(F)|seggy/led_not0001 |   0.000|
+seg<5>      |   10.441(F)|seggy/led_not0001 |   0.000|
+seg<6>      |   10.391(F)|seggy/led_not0001 |   0.000|
+seg<7>      |   10.398(F)|seggy/led_not0001 |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock A<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A<0>           |         |         |    4.570|    4.570|
+A<1>           |         |         |    4.750|    4.750|
+A<2>           |         |         |    4.239|    4.239|
+A<3>           |         |         |    2.956|    2.956|
+B<0>           |         |         |    5.137|    5.137|
+B<1>           |         |         |    4.461|    4.461|
+B<2>           |         |         |    3.735|    3.735|
+B<3>           |         |         |    3.300|    3.300|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock A<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A<0>           |         |         |    4.507|    4.507|
+A<1>           |         |         |    4.687|    4.687|
+A<2>           |         |         |    4.176|    4.176|
+A<3>           |         |         |    2.893|    2.893|
+B<0>           |         |         |    5.074|    5.074|
+B<1>           |         |         |    4.398|    4.398|
+B<2>           |         |         |    3.672|    3.672|
+B<3>           |         |         |    3.237|    3.237|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock A<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A<0>           |         |         |    4.186|    4.186|
+A<1>           |         |         |    4.366|    4.366|
+A<2>           |         |         |    3.855|    3.855|
+A<3>           |         |         |    2.572|    2.572|
+B<0>           |         |         |    4.753|    4.753|
+B<1>           |         |         |    4.077|    4.077|
+B<2>           |         |         |    3.351|    3.351|
+B<3>           |         |         |    2.916|    2.916|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock A<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A<0>           |         |         |    3.820|    3.820|
+A<1>           |         |         |    4.000|    4.000|
+A<2>           |         |         |    3.489|    3.489|
+A<3>           |         |         |    2.206|    2.206|
+B<0>           |         |         |    4.387|    4.387|
+B<1>           |         |         |    3.711|    3.711|
+B<2>           |         |         |    2.985|    2.985|
+B<3>           |         |         |    2.550|    2.550|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock B<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A<0>           |         |         |    4.612|    4.612|
+A<1>           |         |         |    4.792|    4.792|
+A<2>           |         |         |    4.281|    4.281|
+A<3>           |         |         |    2.998|    2.998|
+B<0>           |         |         |    5.179|    5.179|
+B<1>           |         |         |    4.503|    4.503|
+B<2>           |         |         |    3.777|    3.777|
+B<3>           |         |         |    3.342|    3.342|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock B<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A<0>           |         |         |    4.383|    4.383|
+A<1>           |         |         |    4.563|    4.563|
+A<2>           |         |         |    4.052|    4.052|
+A<3>           |         |         |    2.769|    2.769|
+B<0>           |         |         |    4.950|    4.950|
+B<1>           |         |         |    4.274|    4.274|
+B<2>           |         |         |    3.548|    3.548|
+B<3>           |         |         |    3.113|    3.113|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock B<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A<0>           |         |         |    4.496|    4.496|
+A<1>           |         |         |    4.676|    4.676|
+A<2>           |         |         |    4.165|    4.165|
+A<3>           |         |         |    2.882|    2.882|
+B<0>           |         |         |    5.063|    5.063|
+B<1>           |         |         |    4.387|    4.387|
+B<2>           |         |         |    3.661|    3.661|
+B<3>           |         |         |    3.226|    3.226|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock B<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+A<0>           |         |         |    3.545|    3.545|
+A<1>           |         |         |    3.725|    3.725|
+A<2>           |         |         |    3.214|    3.214|
+A<3>           |         |         |    1.931|    1.931|
+B<0>           |         |         |    4.112|    4.112|
+B<1>           |         |         |    3.436|    3.436|
+B<2>           |         |         |    2.710|    2.710|
+B<3>           |         |         |    2.275|    2.275|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |sum<0>         |    7.213|
+A<0>           |sum<1>         |    7.776|
+A<0>           |sum<2>         |    7.902|
+A<0>           |sum<3>         |    9.022|
+A<0>           |sum<4>         |    8.332|
+A<1>           |sum<1>         |    7.855|
+A<1>           |sum<2>         |    8.082|
+A<1>           |sum<3>         |    9.202|
+A<1>           |sum<4>         |    8.512|
+A<2>           |sum<2>         |    7.132|
+A<2>           |sum<3>         |    8.691|
+A<2>           |sum<4>         |    8.001|
+A<3>           |sum<3>         |    7.408|
+A<3>           |sum<4>         |    6.861|
+B<0>           |sum<0>         |    6.834|
+B<0>           |sum<1>         |    7.724|
+B<0>           |sum<2>         |    8.469|
+B<0>           |sum<3>         |    9.589|
+B<0>           |sum<4>         |    8.899|
+B<1>           |sum<1>         |    8.010|
+B<1>           |sum<2>         |    7.793|
+B<1>           |sum<3>         |    8.913|
+B<1>           |sum<4>         |    8.223|
+B<2>           |sum<2>         |    6.744|
+B<2>           |sum<3>         |    8.187|
+B<2>           |sum<4>         |    7.497|
+B<3>           |sum<3>         |    7.752|
+B<3>           |sum<4>         |    7.440|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 03 12:32:00 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 121 MB
+
+
+

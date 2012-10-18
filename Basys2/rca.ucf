@@ -1,0 +1,32 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "A[0]" LOC = G3;
+NET "A[1]" LOC = F3;
+NET "A[2]" LOC = E2;
+NET "A[3]" LOC = N3;
+NET "B[0]" LOC = P11;
+NET "B[1]" LOC = L3;
+NET "B[3]" LOC = B4;
+NET "B[2]" LOC = K3;
+NET "sum[1]" LOC = M11;
+NET "sum[2]" LOC = P7;
+NET "sum[3]" LOC = P6;
+NET "sum[4]" LOC = N5;
+NET "sum[0]" LOC = M5;
+
+
+
+NET "seg[7]" LOC = L14;
+NET "seg[6]" LOC = H12;
+NET "seg[5]" LOC = N14;
+NET "seg[4]" LOC = N11;
+NET "seg[3]" LOC = P12;
+NET "seg[2]" LOC = L13;
+NET "seg[1]" LOC = M12;
+NET "seg[0]" LOC = N13;
+
+NET "anode[0]" LOC = F12;
+NET "anode[1]" LOC = J12;
+NET "anode[2]" LOC = M13;
+NET "anode[3]" LOC = K14;

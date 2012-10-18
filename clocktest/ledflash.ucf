@@ -1,0 +1,4 @@
+NET "mclk" LOC = "B8";
+NET "rs" LOC = "A7";
+
+NET "led" LOC = "M5";

@@ -1,0 +1,6 @@
+MO clockDivider NULL clockDivider.v vlg4B/clock_divider.bin 1349360180
+MO rca2 NULL rca2.v vlg6C/rca2.bin 1349360180
+MO seg7 NULL seg7.v vlg3E/seg7.bin 1349360180
+MO full_adder NULL E:/Users/callumstewart/Desktop/Desktop2/Verilog2/RCA/full_adder.v vlg5A/full__adder.bin 1349360180
+MO switcher NULL switcher.v vlg41/switcher.bin 1349360180
+MO rca NULL rca.v vlg72/rca.bin 1349263877

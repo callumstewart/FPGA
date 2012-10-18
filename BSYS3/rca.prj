@@ -1,0 +1,5 @@
+verilog work "E:/Users/callumstewart/Desktop/Desktop2/Verilog2/RCA/full_adder.v"
+verilog work "switcher.v"
+verilog work "seg7.v"
+verilog work "clockDivider.v"
+verilog work "rca.v"

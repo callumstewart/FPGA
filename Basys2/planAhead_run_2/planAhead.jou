@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.2 (64-bit)
+# Build 194362 by xbuild on Fri Jul 20 18:52:11 MDT 2012
+# Start of session at: Wed Oct 03 08:36:36 2012
+# Process ID: 3632
+# Log file: C:/Users/Callum/Desktop/FPGA/Basys2/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Callum/Desktop/FPGA/Basys2/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Callum/Desktop/FPGA/Basys2/pa.fromHdl.tcl
