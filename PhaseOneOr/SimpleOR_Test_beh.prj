@@ -1,0 +1,4 @@
+verilog work "OR.v"
+verilog work "SimpleOR.v"
+verilog work "SimpleOR_Test.v"
+verilog work "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Callum/Desktop/FPGA/PhaseOneOr/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Callum/Desktop/FPGA/PhaseOneOr/xst"
+elaborate
+-ifn SimpleOR.prj
+-ifmt mixed
