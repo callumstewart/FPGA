@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.35 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: SimpleOR.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,7 +104,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling verilog file "OR.v" in library work
 Compiling verilog file "SimpleOR.v" in library work
+Module <OR> compiled
 Module <SimpleOR> compiled
 No errors in compilation
 Analysis of file <"SimpleOR.prj"> succeeded.
@@ -113,17 +115,31 @@ Analysis of file <"SimpleOR.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
+Analyzing hierarchy for module <SimpleOR> in library <work>.
+
+Analyzing hierarchy for module <OR> in library <work>.
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <SimpleOR>.
+Module <SimpleOR> is correct for synthesis.
+ 
+Analyzing module <OR> in library <work>.
+Module <OR> is correct for synthesis.
+ 
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Performing bidirectional port resolution...
+
+Synthesizing Unit <OR>.
+    Related source file is "OR.v".
+Unit <OR> synthesized.
+
 
 Synthesizing Unit <SimpleOR>.
     Related source file is "SimpleOR.v".
@@ -187,9 +203,14 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 0
+# IOs                              : 5
 
 Cell Usage :
+# BELS                             : 1
+#      LUT4                        : 1
+# IO Buffers                       : 5
+#      IBUF                        : 4
+#      OBUF                        : 1
 =========================================================================
 
 Device utilization summary:
@@ -197,9 +218,10 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-5 
 
- Number of Slices:                        0  out of    960     0%  
- Number of IOs:                           0
- Number of bonded IOBs:                   0  out of     83     0%  
+ Number of Slices:                        1  out of    960     0%  
+ Number of 4 input LUTs:                  1  out of   1920     0%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of     83     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -232,21 +254,40 @@ Speed Grade: -5
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Maximum combinational path delay: 5.753ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 1
+-------------------------------------------------------------------------
+Delay:               5.753ns (Levels of Logic = 3)
+  Source:            B_DOWN (PAD)
+  Destination:       CH_OUT (PAD)
+
+  Data Path: B_DOWN to CH_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.509  B_DOWN_IBUF (B_DOWN_IBUF)
+     LUT4:I0->O            1   0.612   0.357  CH3/C1 (CH_OUT_OBUF)
+     OBUF:I->O                 3.169          CH_OUT_OBUF (CH_OUT)
+    ----------------------------------------
+    Total                      5.753ns (4.887ns logic, 0.866ns route)
+                                       (84.9% logic, 15.1% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.01 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.42 secs
  
 --> 
 
-Total memory usage is 211084 kilobytes
+Total memory usage is 211404 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

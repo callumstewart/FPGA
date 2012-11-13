@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-11-12T17:51:00</DateModified>
+  <DateModified>2012-11-13T19:55:35</DateModified>
   <ModuleName>SimpleOR</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Callum/Desktop/FPGA/PhaseOneOr/iseconfig/SimpleOR.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Callum/Desktop/FPGA/PhaseOneOr</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Callum/Desktop/FPGA/PhaseOneOr\</ImplementationReportsDirectory>
   <DateInitialized>2012-11-12T17:49:03</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

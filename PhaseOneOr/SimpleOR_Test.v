@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1us / 1us
 
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -52,48 +52,196 @@ module SimpleOR_Test;
 		// Wait 100 ns for global reset to finish
 		#100;
 		
-		#100;
-		A_UP = 1;
-		A_DOWN = 0;
-		#100;
+		
+		
+		#142.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
 		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		A_UP = 1; 
+		#10;  //SPIKE
+		A_UP = 0;
+		#10
+		B_UP = 1;
+		#10
+		B_UP = 0;
+		
+		#122.7; //GAP
+		
+		///////
+		//DOWN SPIKES
+		//////
+		#142.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
 		A_DOWN = 0;
 		#10
-		A_UP = 0;
-		A_DOWN = 1;
-		#100;
-		A_UP = 0;
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
 		A_DOWN = 0;
 		#10
-		A_UP = 1;
-		A_DOWN = 0;
-		#100;
-		A_UP = 0;
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
 		A_DOWN = 0;
 		#10
-		A_UP = 0;
-		A_DOWN = 1;
-		#100;
-		A_UP = 0;
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
 		A_DOWN = 0;
 		#10
-		A_UP = 1;
-		A_DOWN = 0;
-		#100;
-		A_UP = 0;
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
 		A_DOWN = 0;
 		#10
-		A_UP = 0;
-		A_DOWN = 1;
-		#100;
-		A_UP = 0;
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
 		A_DOWN = 0;
 		#10
-		A_UP = 1;
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
 		A_DOWN = 0;
-      #100; 
-		// Add stimulus here
-
+		#10
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
+		A_DOWN = 0;
+		#10
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
+		A_DOWN = 0;
+		#10
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		A_DOWN = 1; 
+		#10;  //SPIKE
+		A_DOWN = 0;
+		#10
+		B_DOWN = 1;
+		#10
+		B_DOWN = 0;
+		
+		#122.7; //GAP
+		
+		
 	end
       
 endmodule

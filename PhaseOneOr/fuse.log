@@ -9,15 +9,15 @@ Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/PhaseOneOr/SimpleOR_Test.v"
 Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 117320 KB
-Fuse CPU Usage: 249 ms
+Fuse Memory Usage: 117512 KB
+Fuse CPU Usage: 311 ms
 Compiling module OR
 Compiling module SimpleOR
 Compiling module SimpleOR_Test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 4 Verilog Units
 Built simulation executable C:/Users/Callum/Desktop/FPGA/PhaseOneOr/SimpleOR_Test_isim_beh.exe
-Fuse Memory Usage: 121908 KB
-Fuse CPU Usage: 327 ms
+Fuse Memory Usage: 122100 KB
+Fuse CPU Usage: 405 ms

@@ -28,14 +28,30 @@ module SimpleOR(
 
 	
 	wire CH1_OUT;
-
+	wire CH2_OUT;
+	
+	wire CH;
+	
 	OR CH1 (
     .A(A_UP), 
     .B(A_DOWN), 
     .C(CH1_OUT)
     );
 	 
+	 OR CH2 (
+    .A(B_UP), 
+    .B(B_DOWN), 
+    .C(CH2_OUT)
+    );
 	 
-	assign CH_OUT = CH1_OUT;
+	 OR CH3 (
+    .A(CH1_OUT), 
+    .B(CH2_OUT), 
+    .C(CH)
+    );
+	 
+	 
+	 
+	assign CH_OUT = CH;
 
 endmodule

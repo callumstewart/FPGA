@@ -22,7 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="PhaseOneOr.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="OR.tfi"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SimpleOR.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SimpleOR.lso"/>
@@ -35,9 +35,10 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SimpleOR_Test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SimpleOR_Test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="SimpleOR_Test_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SimpleOR_Test_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SimpleOR_Test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SimpleOR_envsettings.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SimpleOR_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SimpleOR_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SimpleOR_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SimpleOR_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SimpleOR_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -51,36 +52,37 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1352747313" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1352747313">
+    <transform xil_pn:end_ts="1352842237" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1352842237">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1352747313" xil_pn:in_ck="-4973251225594551614" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1352747313">
+    <transform xil_pn:end_ts="1352842454" xil_pn:in_ck="-4973251225594551614" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1352842454">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="OR.v"/>
       <outfile xil_pn:name="SimpleOR.v"/>
       <outfile xil_pn:name="SimpleOR_Test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1352747313" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2681509957065679681" xil_pn:start_ts="1352747313">
+    <transform xil_pn:end_ts="1352842237" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2681509957065679681" xil_pn:start_ts="1352842237">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1352747313" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5338549267333071299" xil_pn:start_ts="1352747313">
+    <transform xil_pn:end_ts="1352842237" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5338549267333071299" xil_pn:start_ts="1352842237">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1352747313" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2532426072556768530" xil_pn:start_ts="1352747313">
+    <transform xil_pn:end_ts="1352842237" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2532426072556768530" xil_pn:start_ts="1352842237">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1352747313" xil_pn:in_ck="-4973251225594551614" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1352747313">
+    <transform xil_pn:end_ts="1352842454" xil_pn:in_ck="-4973251225594551614" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1352842454">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="OR.v"/>
       <outfile xil_pn:name="SimpleOR.v"/>
       <outfile xil_pn:name="SimpleOR_Test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1352747316" xil_pn:in_ck="-4973251225594551614" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4384562760347534365" xil_pn:start_ts="1352747313">
+    <transform xil_pn:end_ts="1352842458" xil_pn:in_ck="-4973251225594551614" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4384562760347534365" xil_pn:start_ts="1352842454">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -92,7 +94,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1352747316" xil_pn:in_ck="122581693247880115" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8943076525439714694" xil_pn:start_ts="1352747316">
+    <transform xil_pn:end_ts="1352842458" xil_pn:in_ck="122581693247880115" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8943076525439714694" xil_pn:start_ts="1352842458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -103,6 +105,7 @@
     </transform>
     <transform xil_pn:end_ts="1352742788" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1352742788">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1352742788" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8569160172447993156" xil_pn:start_ts="1352742788">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -128,13 +131,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1352742800" xil_pn:in_ck="4905763637562460852" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5254869830584558859" xil_pn:start_ts="1352742788">
+    <transform xil_pn:end_ts="1352840408" xil_pn:in_ck="4905763637562460852" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3270304947227329153" xil_pn:start_ts="1352840401">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="SimpleOR.lso"/>
       <outfile xil_pn:name="SimpleOR.ngc"/>
       <outfile xil_pn:name="SimpleOR.ngr"/>
@@ -142,6 +145,8 @@
       <outfile xil_pn:name="SimpleOR.stx"/>
       <outfile xil_pn:name="SimpleOR.syr"/>
       <outfile xil_pn:name="SimpleOR.xst"/>
+      <outfile xil_pn:name="SimpleOR_Test_stx_beh.prj"/>
+      <outfile xil_pn:name="SimpleOR_stx_beh.prj"/>
       <outfile xil_pn:name="SimpleOR_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>

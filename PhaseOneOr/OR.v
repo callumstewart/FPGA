@@ -21,12 +21,9 @@
 module OR(
     input A,
     input B,
-    output reg C
+    output C
     );
 
 
-    always @(posedge A or posedge B)
-	 begin
-	 assign C = (A || B);
-	 end
+assign C = A||B;
 endmodule
