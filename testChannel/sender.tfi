@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+sender instance_name (
+    .start(start), 
+    .ack(ack), 
+    .bit0(bit0), 
+    .bit1(bit1)
+    );
+
+

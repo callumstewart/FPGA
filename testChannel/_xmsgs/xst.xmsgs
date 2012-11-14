@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="916" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">35</arg>: Delay is ignored for synthesis.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">36</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">38</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">40</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">42</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="warning" file="Xst" num="916" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>: Delay is ignored for synthesis.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">49</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">51</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">53</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">55</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="warning" file="Xst" num="916" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">61</arg>: Delay is ignored for synthesis.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">62</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">64</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">66</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">68</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="warning" file="Xst" num="916" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">74</arg>: Delay is ignored for synthesis.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">75</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">77</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">79</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="warning" file="Xst" num="916" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">87</arg>: Delay is ignored for synthesis.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">88</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="warning" file="Xst" num="915" delta="new" >Message (<arg fmt="%d" index="1">916</arg>) is reported only 5 times for each module.
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">98</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="new" >&quot;<arg fmt="%s" index="1">sender.v</arg>&quot; line <arg fmt="%d" index="2">100</arg>: Unsupported <arg fmt="%s" index="3">Wait Statement</arg>. 
+</msg>
+
+</messages>
+

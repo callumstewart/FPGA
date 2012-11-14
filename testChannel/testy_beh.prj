@@ -1,0 +1,5 @@
+verilog work "sender.v"
+verilog work "reciever.v"
+verilog work "DataPath.v"
+verilog work "testy.v"
+verilog work "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

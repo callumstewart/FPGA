@@ -1,0 +1,25 @@
+Running: G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Callum/Desktop/FPGA/testChannel/DataPathTest_isim_beh.exe -prj C:/Users/Callum/Desktop/FPGA/testChannel/DataPathTest_beh.prj work.DataPathTest work.glbl 
+ISim P.28xd (signature 0x1048c146)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/testChannel/sender.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/testChannel/reciever.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/testChannel/DataPath.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/testChannel/DataPathTest.v" into library work
+Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 117320 KB
+Fuse CPU Usage: 264 ms
+Compiling module sender
+Compiling module reciever
+Compiling module DataPath
+Compiling module DataPathTest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable C:/Users/Callum/Desktop/FPGA/testChannel/DataPathTest_isim_beh.exe
+Fuse Memory Usage: 123956 KB
+Fuse CPU Usage: 358 ms

@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+reciever instance_name (
+    .bit0_in(bit0_in), 
+    .bit1_in(bit1_in), 
+    .ack_out(ack_out)
+    );
+
+

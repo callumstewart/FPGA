@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj testChannel -o C:/Users/Callum/Desktop/FPGA/testChannel/sender.tfi -lib work C:/Users/Callum/Desktop/FPGA/testChannel//sender.v -module sender -template G:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj testChannel -o C:/Users/Callum/Desktop/FPGA/testChannel/sender.tfi -lib work C:/Users/Callum/Desktop/FPGA/testChannel//sender.v -module sender -template G:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

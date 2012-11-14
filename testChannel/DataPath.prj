@@ -1,0 +1,3 @@
+verilog work "sender.v"
+verilog work "reciever.v"
+verilog work "DataPath.v"
