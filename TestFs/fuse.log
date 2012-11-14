@@ -1,0 +1,15 @@
+Running: G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Callum/Desktop/FPGA/TestFs/testFs_isim_beh.exe -prj C:/Users/Callum/Desktop/FPGA/TestFs/testFs_beh.prj work.testFs work.glbl 
+ISim P.28xd (signature 0x1048c146)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.v" into library work
+WARNING:HDLCompiler:329 - "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.v" Line 31: Target <A> of concurrent assignment or output port connection should be a net type.
+WARNING:HDLCompiler:329 - "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.v" Line 32: Target <B> of concurrent assignment or output port connection should be a net type.
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/testFs.v" into library work
+Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:267 - "C:/Users/Callum/Desktop/FPGA/TestFs/testFs.v" Line 38: Cannot find port B on this module
+ERROR:HDLCompiler:25 - "C:/Users/Callum/Desktop/FPGA/TestFs/testFs.v" Line 43: Module <Fs> does not have a port named <A>.
+ERROR:HDLCompiler:25 - "C:/Users/Callum/Desktop/FPGA/TestFs/testFs.v" Line 44: Module <Fs> does not have a port named <B>.
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

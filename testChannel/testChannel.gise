@@ -58,6 +58,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1352862115" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1352862115">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1352862115" xil_pn:in_ck="-2267661792076292204" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1352862115">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -110,6 +111,7 @@
     </transform>
     <transform xil_pn:end_ts="1352857329" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1352857329">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1352857329" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6252668545020504544" xil_pn:start_ts="1352857329">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -139,6 +141,7 @@
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="DataPath.lso"/>
       <outfile xil_pn:name="DataPath.ngc"/>
       <outfile xil_pn:name="DataPath.ngr"/>
