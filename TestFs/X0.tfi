@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+X0 instance_name (
+    .ack(ack), 
+    .X0(X0), 
+    .senack(senack), 
+    .reset(reset), 
+    .A(A), 
+    .B(B), 
+    .C(C), 
+    .Cclear(Cclear), 
+    .Dt(Dt), 
+    .bit0(bit0), 
+    .bit1(bit1)
+    );
+
+

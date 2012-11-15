@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Edinburgh University
+// Engineer: Callum Stewart
 // 
 // Create Date:    20:33:20 11/14/2012 
-// Design Name: 
+// Design Name: 	 Fs Control Signal Generator Asynchronous FSM
 // Module Name:    Fs 
-// Project Name: 
+// Project Name: 	 Address Event Controller
 // Target Devices: 
 // Tool versions: 
 // Description: 

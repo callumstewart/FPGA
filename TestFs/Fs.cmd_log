@@ -1,2 +1,7 @@
 xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.xst" -ofn "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.syr" 
 xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.xst" -ofn "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.syr" 
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.xst" -ofn "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 Fs.ngc Fs.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Fs_map.ncd Fs.ngd Fs.pcf 
+par -w -intstyle ise -ol high -t 1 Fs_map.ncd Fs.ncd Fs.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Fs.twx Fs.ncd -o Fs.twr Fs.pcf 

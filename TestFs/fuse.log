@@ -1,15 +1,31 @@
-Running: G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Callum/Desktop/FPGA/TestFs/testFs_isim_beh.exe -prj C:/Users/Callum/Desktop/FPGA/TestFs/testFs_beh.prj work.testFs work.glbl 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_beh.prj" "work.Wontwork" "work.glbl" 
 ISim P.28xd (signature 0x1048c146)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.v" into library work
-WARNING:HDLCompiler:329 - "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.v" Line 31: Target <A> of concurrent assignment or output port connection should be a net type.
-WARNING:HDLCompiler:329 - "C:/Users/Callum/Desktop/FPGA/TestFs/Fs.v" Line 32: Target <B> of concurrent assignment or output port connection should be a net type.
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/testFs.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/X0.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/One.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/Nought.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/FsRefined.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/Fe.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/Sender.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork.v" into library work
 Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:267 - "C:/Users/Callum/Desktop/FPGA/TestFs/testFs.v" Line 38: Cannot find port B on this module
-ERROR:HDLCompiler:25 - "C:/Users/Callum/Desktop/FPGA/TestFs/testFs.v" Line 43: Module <Fs> does not have a port named <A>.
-ERROR:HDLCompiler:25 - "C:/Users/Callum/Desktop/FPGA/TestFs/testFs.v" Line 44: Module <Fs> does not have a port named <B>.
-ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed
+Completed static elaboration
+Fuse Memory Usage: 117896 KB
+Fuse CPU Usage: 249 ms
+Compiling module FsRefined
+Compiling module Nought
+Compiling module One
+Compiling module X0
+Compiling module Fe
+Compiling module Sender
+Compiling module Wontwork
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 Verilog Units
+Built simulation executable C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_isim_beh.exe
+Fuse Memory Usage: 123508 KB
+Fuse CPU Usage: 436 ms

@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+FsRefined instance_name (
+    .A(A), 
+    .B(B), 
+    .C(C), 
+    .reset(reset), 
+    .ack(ack), 
+    .senack(senack), 
+    .cclear(cclear), 
+    .Fs(Fs), 
+    .Dt(Dt), 
+    .bit0(bit0), 
+    .bit1(bit1)
+    );
+
+

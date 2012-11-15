@@ -1,0 +1,8 @@
+verilog isim_temp "X0.v"
+verilog isim_temp "One.v"
+verilog isim_temp "Nought.v"
+verilog isim_temp "FsRefined.v"
+verilog isim_temp "Fe.v"
+verilog isim_temp "Sender.v"
+verilog isim_temp "Wontwork.v"
+verilog isim_temp "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

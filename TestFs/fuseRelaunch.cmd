@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/TestFs/testFs_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/TestFs/testFs_beh.prj" "work.testFs" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_beh.prj" "work.Wontwork" "work.glbl" 

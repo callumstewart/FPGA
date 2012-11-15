@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/TestFs/FsRefined.xst" -ofn "C:/Users/Callum/Desktop/FPGA/TestFs/FsRefined.syr" 
+vhdtdtfi -lang verilog -prj TestFs -o C:/Users/Callum/Desktop/FPGA/TestFs/FsRefined.tfi -lib work C:/Users/Callum/Desktop/FPGA/TestFs//FsRefined.v -module FsRefined -template G:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 
