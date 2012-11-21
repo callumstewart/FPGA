@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Arbiter.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Arb_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Arb_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Arb_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="C_Element.tfi"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Cascoded_Tree_Arbiter.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Cascoded_Tree_Arbiter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Cascoded_Tree_Arbiter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Cascoded_Tree_Arbiter.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Cascoded_Tree_Arbiter.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Cascoded_Tree_Arbiter.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Cascoded_Tree_Arbiter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Cascoded_Tree_Arbiter.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Cascoded_Tree_Arbiter_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="InvAnd.tfi"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ME.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ME.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ME.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ME.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ME.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ME.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ME.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="ME.tfi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ME.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ME_TEST_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ME_TEST_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ME_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ME_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Nand.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Nor.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Sor.tfi"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1353462234" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1353462234">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463635" xil_pn:in_ck="1135732685416707704" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1353463635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Arb_test.v"/>
+      <outfile xil_pn:name="C_Element.v"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.v"/>
+      <outfile xil_pn:name="InvAnd.v"/>
+      <outfile xil_pn:name="ME.v"/>
+      <outfile xil_pn:name="ME_TEST.v"/>
+      <outfile xil_pn:name="Nand.v"/>
+      <outfile xil_pn:name="Nor.v"/>
+      <outfile xil_pn:name="Sor.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463635" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2274802830889250613" xil_pn:start_ts="1353463635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463635" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8478989572561964493" xil_pn:start_ts="1353463635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463635" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8761161334377674896" xil_pn:start_ts="1353463635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463635" xil_pn:in_ck="1135732685416707704" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1353463635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Arb_test.v"/>
+      <outfile xil_pn:name="C_Element.v"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.v"/>
+      <outfile xil_pn:name="InvAnd.v"/>
+      <outfile xil_pn:name="ME.v"/>
+      <outfile xil_pn:name="ME_TEST.v"/>
+      <outfile xil_pn:name="Nand.v"/>
+      <outfile xil_pn:name="Nor.v"/>
+      <outfile xil_pn:name="Sor.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463638" xil_pn:in_ck="1135732685416707704" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7064550038871571977" xil_pn:start_ts="1353463635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Arb_test_beh.prj"/>
+      <outfile xil_pn:name="Arb_test_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463638" xil_pn:in_ck="1477102027112644323" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-324111507300708230" xil_pn:start_ts="1353463638">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Arb_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1353461991" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1353461991">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463423" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3239896657297307450" xil_pn:start_ts="1353463423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463423" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8761161334377674896" xil_pn:start_ts="1353463423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463423" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1353463423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463423" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3811778086656308804" xil_pn:start_ts="1353463423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463423" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1353463423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463423" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4546697113039500762" xil_pn:start_ts="1353463423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1353463448" xil_pn:in_ck="6352363197297180651" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4836876312408530345" xil_pn:start_ts="1353463442">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.lso"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.ngc"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.ngr"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.prj"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.stx"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.syr"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter.xst"/>
+      <outfile xil_pn:name="Cascoded_Tree_Arbiter_xst.xrpt"/>
+      <outfile xil_pn:name="ME.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

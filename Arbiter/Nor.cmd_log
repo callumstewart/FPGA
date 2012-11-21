@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Arbiter -o C:/Users/Callum/Desktop/FPGA/Arbiter/Nor.tfi -lib work C:/Users/Callum/Desktop/FPGA/Arbiter//Nor.v -module Nor -template G:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-11-15T08:01:17</DateModified>
+  <DateModified>2012-11-20T19:44:43</DateModified>
   <ModuleName>Sender</ModuleName>
   <SummaryTimeStamp>2012-11-15T07:11:06</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Callum/Desktop/FPGA/TestFs/iseconfig/Sender.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Callum/Desktop/FPGA/TestFs</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Callum/Desktop/FPGA/TestFs\</ImplementationReportsDirectory>
   <DateInitialized>2012-11-15T05:16:00</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

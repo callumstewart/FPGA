@@ -1,0 +1,33 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/Arbiter/Arb_test_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/Arbiter/Arb_test_beh.prj" "work.Arb_test" "work.glbl" 
+ISim P.28xd (signature 0x1048c146)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Arbiter/Nor.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Arbiter/Nand.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Arbiter/Sor.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Arbiter/ME.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Arbiter/InvAnd.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Arbiter/C_Element.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Arbiter/Cascoded_Tree_Arbiter.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Arbiter/Arb_test.v" into library work
+Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 118024 KB
+Fuse CPU Usage: 249 ms
+Compiling module Nand
+Compiling module Nor
+Compiling module ME
+Compiling module InvAnd
+Compiling module C_Element
+Compiling module Sor
+Compiling module Cascoded_Tree_Arbiter
+Compiling module Arb_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
+Built simulation executable C:/Users/Callum/Desktop/FPGA/Arbiter/Arb_test_isim_beh.exe
+Fuse Memory Usage: 122612 KB
+Fuse CPU Usage: 389 ms

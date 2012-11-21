@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Callum/Desktop/FPGA/TestReciever/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Callum/Desktop/FPGA/TestReciever/xst"
+elaborate
+-ifn Reciever.prj
+-ifmt mixed

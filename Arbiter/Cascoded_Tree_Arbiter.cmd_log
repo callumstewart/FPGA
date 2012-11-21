@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/Arbiter/Cascoded_Tree_Arbiter.xst" -ofn "C:/Users/Callum/Desktop/FPGA/Arbiter/Cascoded_Tree_Arbiter.syr" 
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/Arbiter/Cascoded_Tree_Arbiter.xst" -ofn "C:/Users/Callum/Desktop/FPGA/Arbiter/Cascoded_Tree_Arbiter.syr" 

@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+Sor instance_name (
+    .a(a), 
+    .b(b), 
+    .c(c)
+    );
+
+

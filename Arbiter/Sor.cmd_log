@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Arbiter -o C:/Users/Callum/Desktop/FPGA/Arbiter/Sor.tfi -lib work C:/Users/Callum/Desktop/FPGA/Arbiter//Sor.v -module Sor -template G:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

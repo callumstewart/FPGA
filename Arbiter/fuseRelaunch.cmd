@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/Arbiter/Arb_test_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/Arbiter/Arb_test_beh.prj" "work.Arb_test" "work.glbl" 

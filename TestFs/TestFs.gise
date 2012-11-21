@@ -288,7 +288,6 @@
     <transform xil_pn:end_ts="1352976544" xil_pn:in_ck="6739259172797209546" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4590195993631766681" xil_pn:start_ts="1352976539">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForced"/>
       <outfile xil_pn:name="Sender.bld"/>
       <outfile xil_pn:name="Sender.ngd"/>
