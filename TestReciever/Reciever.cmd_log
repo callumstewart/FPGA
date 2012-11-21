@@ -1,4 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/TestReciever/Reciever.xst" -ofn "C:/Users/Callum/Desktop/FPGA/TestReciever/Reciever.syr" 
-xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/TestReciever/Reciever.xst" -ofn "C:/Users/Callum/Desktop/FPGA/TestReciever/Reciever.syr" 
-xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/TestReciever/Reciever.xst" -ofn "C:/Users/Callum/Desktop/FPGA/TestReciever/Reciever.syr" 
-netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Reciever.ngc Reciever_synthesis.v 
