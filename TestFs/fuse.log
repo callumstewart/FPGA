@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_beh.prj" "work.Wontwork" "work.glbl" 
+Running: G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_isim_beh.exe -prj C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_beh.prj work.Wontwork work.glbl 
 ISim P.28xd (signature 0x1048c146)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -13,8 +13,8 @@ Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork.v" into lib
 Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 117896 KB
-Fuse CPU Usage: 249 ms
+Fuse Memory Usage: 117512 KB
+Fuse CPU Usage: 265 ms
 Compiling module FsRefined
 Compiling module Nought
 Compiling module One
@@ -27,5 +27,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 8 Verilog Units
 Built simulation executable C:/Users/Callum/Desktop/FPGA/TestFs/Wontwork_isim_beh.exe
-Fuse Memory Usage: 123508 KB
-Fuse CPU Usage: 436 ms
+Fuse Memory Usage: 123124 KB
+Fuse CPU Usage: 467 ms

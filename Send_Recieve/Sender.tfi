@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+Sender instance_name (
+    .ack(ack), 
+    .reset(reset), 
+    .Ch1(Ch1), 
+    .Ch2(Ch2), 
+    .Up(Up), 
+    .go(go), 
+    .Down(Down), 
+    .Bit0_Out(Bit0_Out), 
+    .Bit1_Out(Bit1_Out), 
+    .comp(comp), 
+    .dt(dt)
+    );
+
+

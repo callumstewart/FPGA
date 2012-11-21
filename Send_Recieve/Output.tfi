@@ -1,0 +1,24 @@
+
+
+
+// Instantiate the module
+Output instance_name (
+    .Fd(Fd), 
+    .Fs(Fs), 
+    .Fe(Fe), 
+    .X0(X0), 
+    .One(One), 
+    .Zero(Zero), 
+    .Fs_ack(Fs_ack), 
+    .Fe_ack(Fe_ack), 
+    .Fd_ack(Fd_ack), 
+    .X0_ack(X0_ack), 
+    .one_ack(one_ack), 
+    .zero_ack(zero_ack), 
+    .Ch1_Up(Ch1_Up), 
+    .Ch1_Down(Ch1_Down), 
+    .Ch2_Up(Ch2_Up), 
+    .Ch2_Down(Ch2_Down)
+    );
+
+

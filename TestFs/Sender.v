@@ -144,7 +144,7 @@ module Sender(
 	dt1reg = d_x0&&Down;
    Fe_d = 1;
 	
-	x0d_senac = 1;
+	x0d_senac = d_x0 && 1;
 	
 	
 	end
@@ -157,7 +157,7 @@ module Sender(
 	dt2reg = d_x0&&Up;
 	Fe_d = 1;
 	
-	x0d_senac = 1;
+	x0d_senac = d_x0 && 1;
 	end
 	
 	else
@@ -184,6 +184,10 @@ module Sender(
 	d_fe = 1;
 	end
 	
+	else if(fe_compl == 1)
+	begin
+	fe_senac = 1;
+	end
 	
 	else
 	if (nought_clear == 1)
@@ -209,6 +213,6 @@ module Sender(
 	 Bit0_Out = (bit0_fs || bit0_nought1 || bit0_x0 || bit0_fe),
 	 Bit1_Out = (bit1_fs|| bit1_one1|| bit1_x1 || bit1_fe),
 	 dt = d_x00,
-	 comp = dt1;
+	 comp = fe_compl;
 	// dt = fs_d || x0_d || d_x00 || d_x01 || d_fe1 || d_fe2;
 endmodule

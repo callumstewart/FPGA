@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/Send_Recieve/Channel.xst" -ofn "C:/Users/Callum/Desktop/FPGA/Send_Recieve/Channel.syr" 
