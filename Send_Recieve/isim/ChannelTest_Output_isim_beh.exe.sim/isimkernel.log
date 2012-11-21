@@ -1,0 +1,10 @@
+Command line:
+   ChannelTest_Output_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60245
+
+Wed Nov 21 07:40:35 2012
+
+
+ Elaboration Time: 0.0156 sec

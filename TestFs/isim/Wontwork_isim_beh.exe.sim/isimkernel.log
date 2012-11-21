@@ -2,28 +2,9 @@ Command line:
    Wontwork_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50236
+     -socket  56083
 
-Thu Nov 15 10:44:01 2012
+Wed Nov 21 03:01:32 2012
 
 
  Elaboration Time: 0.0312 sec
-
- Current Memory Usage: 503.149 Meg
-
- Total Signals          : 110
- Total Nets             : 64
- Total Signal Drivers   : 56
- Total Blocks           : 8
- Total Primitive Blocks : 6
- Total Processes        : 59
- Total Traceable Variables  : 36
- Total Scalar Nets and Variables : 162
-Total Line Count : 133
-
- Total Simulation Time: 0.0312 sec
-
- Current Memory Usage: 504.197 Meg
-
-Thu Nov 15 11:00:14 2012
-
