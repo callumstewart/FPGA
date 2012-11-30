@@ -23,35 +23,47 @@ module AER_Input(
     input Ch1Down,
     input Ch2Up,
     input Ch2Down,
-    input reset
+	 input ack,
+    input reset,
+	 output bit0,
+	 output bit1
     );
 
-
+	wire Fs_sen, Fe_d;
+	wire sen_bit0, sen_bit1;
+	wire Ch1wire, Ch2wire, Upwire, Downwire, go;
 
 	Arbiter Arbitration (
-    .Ch1Up_In(Ch1Up_In), 
-    .Ch1Down_In(Ch1Down_In), 
-    .Ch2Up_In(Ch2Up_In), 
-    .Ch2Down_In(Ch2Down_In), 
+    .Ch1Up_In(Ch1Up), 
+    .Ch1Down_In(Ch1Down), 
+    .Ch2Up_In(Ch2Up), 
+    .Ch2Down_In(Ch2Down), 
     .Fs_sen(Fs_sen), 
     .Fe_d(Fe_d), 
     .reset(reset), 
-    .Ch1(Ch1), 
-    .Ch2(Ch2), 
-    .Up(Up), 
-    .Down(Down), 
+    .Ch1(Ch1wire), 
+    .Ch2(Ch2wire), 
+    .Up(Upwire), 
+    .Down(Downwire), 
     .go(go)
     );
 	 
-	 Sender SendChannel (
+	 
+	 Sender SenderChannel (
     .go(go), 
     .reset(reset), 
-    .Ch1(Ch1), 
-    .Ch2(Ch2), 
-    .Up(Up), 
-    .Down(Down), 
+    .Ch1(Ch1wire), 
+    .Ch2(Ch2wire), 
+    .Up(Upwire), 
+    .Down(Downwire), 
     .ack(ack), 
-    .bit0(bit0), 
-    .bit1(bit1)
+    .bit0(sen_bit0), 
+    .bit1(sen_bit1), 
+    .Fs_senOut(Fs_sen), 
+    .Fs_dOut(Fe_d)
     );
+
+	assign 
+	bit0 = sen_bit0,
+	bit1 = sen_bit1;
 endmodule

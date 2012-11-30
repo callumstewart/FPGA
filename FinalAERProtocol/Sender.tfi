@@ -11,7 +11,9 @@ Sender instance_name (
     .Down(Down), 
     .ack(ack), 
     .bit0(bit0), 
-    .bit1(bit1)
+    .bit1(bit1), 
+    .Fs_senOut(Fs_senOut), 
+    .Fs_dOut(Fs_dOut)
     );
 
 

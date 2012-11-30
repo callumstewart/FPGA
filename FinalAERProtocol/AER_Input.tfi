@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+AER_Input instance_name (
+    .Ch1Up(Ch1Up), 
+    .Ch1Down(Ch1Down), 
+    .Ch2Up(Ch2Up), 
+    .Ch2Down(Ch2Down), 
+    .ack(ack), 
+    .reset(reset), 
+    .bit0(bit0), 
+    .bit1(bit1)
+    );
+
+

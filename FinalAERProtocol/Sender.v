@@ -27,7 +27,9 @@ module Sender(
     input Down,
     input ack,
     output bit0,
-    output bit1
+    output bit1,
+	 output Fs_senOut,
+	 output Fs_dOut
     );
 	 
 	 wire Fs, Fs_sen, Fs_d, Zero, Zero_sen, Zero_d;
@@ -137,7 +139,8 @@ module Sender(
 	assign
 	
 	bit0 = ((Fs_bit0 || X0_bit0 || Fe_bit0 || Zero_bit0)),
-	bit1 = ((Fs_bit1 || X0_bit1 || Fe_bit1 || One_bit1));
-
+	bit1 = ((Fs_bit1 || X0_bit1 || Fe_bit1 || One_bit1)),
+	Fs_senOut = Fs_sen,
+	Fs_dOut = Fe_d;
 
 endmodule
