@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+ME instance_name (
+    .Req1(Req1), 
+    .Req2(Req2), 
+    .G1(G1), 
+    .G2(G2)
+    );
+
+

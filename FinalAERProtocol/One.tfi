@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+One instance_name (
+    .ack(ack), 
+    .reset(reset), 
+    .senack(senack), 
+    .one(one), 
+    .A(A), 
+    .B(B), 
+    .Dt(Dt), 
+    .bit1(bit1)
+    );
+
+

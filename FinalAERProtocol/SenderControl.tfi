@@ -1,0 +1,34 @@
+
+
+
+// Instantiate the module
+SenderControl instance_name (
+    .go(go), 
+    .Fs_d(Fs_d), 
+    .Ch1(Ch1), 
+    .Ch2(Ch2), 
+    .Up(Up), 
+    .Down(Down), 
+    .X0_d(X0_d), 
+    .Zero_d(Zero_d), 
+    .One_d(One_d), 
+    .Fe_d(Fe_d), 
+    .reset(reset), 
+    .Fs(Fs), 
+    .Fs_sen(Fs_sen), 
+    .Zero(Zero), 
+    .Zero_sen(Zero_sen), 
+    .One(One), 
+    .One_sen(One_sen), 
+    .X0(X0), 
+    .X0_sen(X0_sen), 
+    .Fe(Fe), 
+    .Fe_sen(Fe_sen), 
+    .A(A), 
+    .B(B), 
+    .C(C), 
+    .D(D), 
+    .E(E)
+    );
+
+

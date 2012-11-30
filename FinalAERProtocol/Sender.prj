@@ -1,0 +1,7 @@
+verilog work "X0.v"
+verilog work "SenderControl.v"
+verilog work "One.v"
+verilog work "Nought.v"
+verilog work "FsRefined.v"
+verilog work "Fe.v"
+verilog work "Sender.v"

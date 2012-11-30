@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+Fe instance_name (
+    .ack(ack), 
+    .Fe(Fe), 
+    .senack(senack), 
+    .reset(reset), 
+    .A(A), 
+    .B(B), 
+    .C(C), 
+    .Dt(Dt), 
+    .bit0(bit0), 
+    .bit1(bit1)
+    );
+
+

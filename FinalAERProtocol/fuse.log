@@ -1,0 +1,35 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Arbiter_Test_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Arbiter_Test_beh.prj" "work.Arbiter_Test" "work.glbl" 
+ISim P.28xd (signature 0x1048c146)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Nor.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Nand.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/ME.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Ch2Up_FSM.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Ch2Down_FSM.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Ch1Up_FSM.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Ch1Down_FSM.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Arbiter.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Arbiter_Test.v" into library work
+Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 117896 KB
+Fuse CPU Usage: 280 ms
+Compiling module Ch1Up_FSM
+Compiling module Ch1Down_FSM
+Compiling module Ch2Up_FSM
+Compiling module Ch2Down_FSM
+Compiling module Nand
+Compiling module Nor
+Compiling module ME
+Compiling module Arbiter
+Compiling module Arbiter_Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 10 Verilog Units
+Built simulation executable C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Arbiter_Test_isim_beh.exe
+Fuse Memory Usage: 123508 KB
+Fuse CPU Usage: 545 ms

@@ -2,9 +2,28 @@ Command line:
    ChannelTest_Output_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  60245
+     -socket  62576
 
-Wed Nov 21 07:40:35 2012
+Wed Nov 21 10:12:18 2012
 
 
- Elaboration Time: 0.0156 sec
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 503.55 Meg
+
+ Total Signals          : 180
+ Total Nets             : 90
+ Total Signal Drivers   : 82
+ Total Blocks           : 12
+ Total Primitive Blocks : 9
+ Total Processes        : 90
+ Total Traceable Variables  : 47
+ Total Scalar Nets and Variables : 199
+Total Line Count : 174
+
+ Total Simulation Time: 0.0312 sec
+
+ Current Memory Usage: 503.55 Meg
+
+Fri Nov 23 20:56:32 2012
+

@@ -1,0 +1,39 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/Send_Recieve/ChannelTest_Output_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/Send_Recieve/ChannelTest_Output_beh.prj" "work.ChannelTest_Output" "work.glbl" 
+ISim P.28xd (signature 0x1048c146)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/X0.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/One.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/Nought.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/FsRefined.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/Fe.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/Sender.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/Reciever.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/Output.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/buf.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/Channel.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/Send_Recieve/ChannelTest_Output.v" into library work
+Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 117960 KB
+Fuse CPU Usage: 248 ms
+Compiling module Reciever
+Compiling module FsRefined
+Compiling module Nought
+Compiling module One
+Compiling module X0
+Compiling module Fe
+Compiling module Sender
+Compiling module buf1
+Compiling module Output
+Compiling module Channel
+Compiling module ChannelTest_Output
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable C:/Users/Callum/Desktop/FPGA/Send_Recieve/ChannelTest_Output_isim_beh.exe
+Fuse Memory Usage: 125876 KB
+Fuse CPU Usage: 608 ms

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-11-14T20:31:16</DateModified>
+  <DateModified>2012-11-21T07:54:54</DateModified>
   <ModuleName>DataPath</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Callum/Desktop/FPGA/testChannel/iseconfig/DataPath.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Callum/Desktop/FPGA/testChannel</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Callum/Desktop/FPGA/testChannel\</ImplementationReportsDirectory>
   <DateInitialized>2012-11-14T20:31:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

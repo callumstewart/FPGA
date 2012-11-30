@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj FinalAERProtocol -o C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/X0.tfi -lib work C:/Users/Callum/Desktop/FPGA/FinalAERProtocol//X0.v -module X0 -template G:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

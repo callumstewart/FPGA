@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Send_Recieve -o C:/Users/Callum/Desktop/FPGA/Send_Recieve/Output.tfi -lib work C:/Users/Callum/Desktop/FPGA/Send_Recieve//Output.v -module Output -template G:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

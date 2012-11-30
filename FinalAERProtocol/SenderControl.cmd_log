@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/SenderControl.xst" -ofn "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/SenderControl.syr" 
+xst -intstyle ise -ifn "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/SenderControl.xst" -ofn "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/SenderControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 SenderControl.ngc SenderControl.ngd  
+vhdtdtfi -lang verilog -prj FinalAERProtocol -o C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/SenderControl.tfi -lib work C:/Users/Callum/Desktop/FPGA/FinalAERProtocol//SenderControl.v -module SenderControl -template G:/Xilinx/14.2/ISE_DS/ISE//data/tfi.tft -deleteonerror 

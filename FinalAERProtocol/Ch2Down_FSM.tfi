@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+Ch2Down_FSM instance_name (
+    .Ch2Down(Ch2Down), 
+    .Gnt2(Gnt2), 
+    .Fs_sen(Fs_sen), 
+    .Fe_d(Fe_d), 
+    .reset(reset), 
+    .Req2(Req2), 
+    .Ch2(Ch2), 
+    .Down(Down), 
+    .go(go), 
+    .A(A), 
+    .B(B), 
+    .C(C)
+    );
+
+

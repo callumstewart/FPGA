@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+buf1 instance_name (
+    .a(a), 
+    .b(b)
+    );
+
+

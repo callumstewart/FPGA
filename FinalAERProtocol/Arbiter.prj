@@ -1,0 +1,8 @@
+verilog work "Nor.v"
+verilog work "Nand.v"
+verilog work "ME.v"
+verilog work "Ch2Up_FSM.v"
+verilog work "Ch2Down_FSM.v"
+verilog work "Ch1Up_FSM.v"
+verilog work "Ch1Down_FSM.v"
+verilog work "Arbiter.v"

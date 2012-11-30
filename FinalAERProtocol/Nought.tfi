@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+Nought instance_name (
+    .ack(ack), 
+    .reset(reset), 
+    .senack(senack), 
+    .nought(nought), 
+    .A(A), 
+    .B(B), 
+    .Dt(Dt), 
+    .bit0(bit0)
+    );
+
+

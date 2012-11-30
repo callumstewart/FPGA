@@ -63,64 +63,72 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1353476286" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1353476286">
+    <transform xil_pn:end_ts="1353484960" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1353484960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1353478894" xil_pn:in_ck="8513712182592668008" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1353478894">
+    <transform xil_pn:end_ts="1353486836" xil_pn:in_ck="8513712182592668008" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1353486836">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Channel.v"/>
+      <outfile xil_pn:name="ChannelTest_Output.v"/>
+      <outfile xil_pn:name="Channeltest.v"/>
+      <outfile xil_pn:name="Fe.v"/>
+      <outfile xil_pn:name="FsRefined.v"/>
+      <outfile xil_pn:name="Nought.v"/>
+      <outfile xil_pn:name="One.v"/>
+      <outfile xil_pn:name="Output.v"/>
+      <outfile xil_pn:name="Reciever.v"/>
+      <outfile xil_pn:name="Sender.v"/>
+      <outfile xil_pn:name="X0.v"/>
+      <outfile xil_pn:name="buf.v"/>
+      <outfile xil_pn:name="decoder_test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1353478904" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8748727882334539136" xil_pn:start_ts="1353478904">
+    <transform xil_pn:end_ts="1353484960" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8748727882334539136" xil_pn:start_ts="1353484960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1353478904" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8633240968426846914" xil_pn:start_ts="1353478904">
+    <transform xil_pn:end_ts="1353484960" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8633240968426846914" xil_pn:start_ts="1353484960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1353476286" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7058920586734747780" xil_pn:start_ts="1353476286">
+    <transform xil_pn:end_ts="1353484960" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7058920586734747780" xil_pn:start_ts="1353484960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1353478894" xil_pn:in_ck="8513712182592668008" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1353478894">
+    <transform xil_pn:end_ts="1353486836" xil_pn:in_ck="8513712182592668008" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1353486836">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="Channel.v"/>
+      <outfile xil_pn:name="ChannelTest_Output.v"/>
+      <outfile xil_pn:name="Channeltest.v"/>
+      <outfile xil_pn:name="Fe.v"/>
+      <outfile xil_pn:name="FsRefined.v"/>
+      <outfile xil_pn:name="Nought.v"/>
+      <outfile xil_pn:name="One.v"/>
+      <outfile xil_pn:name="Output.v"/>
+      <outfile xil_pn:name="Reciever.v"/>
+      <outfile xil_pn:name="Sender.v"/>
+      <outfile xil_pn:name="X0.v"/>
+      <outfile xil_pn:name="buf.v"/>
+      <outfile xil_pn:name="decoder_test.v"/>
     </transform>
-    <transform xil_pn:end_ts="1353478908" xil_pn:in_ck="8513712182592668008" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2436770724027852703" xil_pn:start_ts="1353478904">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1353478908" xil_pn:in_ck="3226745159648929766" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="781115690851063492" xil_pn:start_ts="1353478908">
+    <transform xil_pn:end_ts="1353486840" xil_pn:in_ck="8513712182592668008" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2436770724027852703" xil_pn:start_ts="1353486836">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="ChannelTest_Output_beh.prj"/>
+      <outfile xil_pn:name="ChannelTest_Output_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1353486840" xil_pn:in_ck="9009721369719536334" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="781115690851063492" xil_pn:start_ts="1353486840">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ChannelTest_Output_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1353482533" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1353482533">
       <status xil_pn:value="SuccessfullyRun"/>

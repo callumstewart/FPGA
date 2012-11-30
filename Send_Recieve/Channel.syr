@@ -1,0 +1,1122 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Channel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Channel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Channel"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : Channel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "X0.v" in library work
+Compiling verilog file "One.v" in library work
+Module <X0> compiled
+Compiling verilog file "Nought.v" in library work
+Module <One> compiled
+Compiling verilog file "FsRefined.v" in library work
+Module <Nought> compiled
+Compiling verilog file "Fe.v" in library work
+Module <FsRefined> compiled
+Compiling verilog file "Sender.v" in library work
+Module <Fe> compiled
+Compiling verilog file "Reciever.v" in library work
+Module <Sender> compiled
+Compiling verilog file "Output.v" in library work
+Module <Reciever> compiled
+Compiling verilog file "buf.v" in library work
+Module <Output> compiled
+Compiling verilog file "Channel.v" in library work
+Module <buf1> compiled
+Module <Channel> compiled
+No errors in compilation
+Analysis of file <"Channel.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Channel> in library <work>.
+
+Analyzing hierarchy for module <Reciever> in library <work>.
+
+Analyzing hierarchy for module <Sender> in library <work>.
+
+Analyzing hierarchy for module <buf1> in library <work>.
+
+Analyzing hierarchy for module <Output> in library <work>.
+
+Analyzing hierarchy for module <FsRefined> in library <work>.
+
+Analyzing hierarchy for module <Nought> in library <work>.
+
+Analyzing hierarchy for module <One> in library <work>.
+
+Analyzing hierarchy for module <X0> in library <work>.
+
+Analyzing hierarchy for module <Fe> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Channel>.
+Module <Channel> is correct for synthesis.
+ 
+Analyzing module <Reciever> in library <work>.
+Module <Reciever> is correct for synthesis.
+ 
+Analyzing module <Sender> in library <work>.
+Module <Sender> is correct for synthesis.
+ 
+Analyzing module <FsRefined> in library <work>.
+Module <FsRefined> is correct for synthesis.
+ 
+Analyzing module <Nought> in library <work>.
+Module <Nought> is correct for synthesis.
+ 
+Analyzing module <One> in library <work>.
+Module <One> is correct for synthesis.
+ 
+Analyzing module <X0> in library <work>.
+Module <X0> is correct for synthesis.
+ 
+Analyzing module <Fe> in library <work>.
+Module <Fe> is correct for synthesis.
+ 
+Analyzing module <buf1> in library <work>.
+WARNING:Xst:916 - "buf.v" line 29: Delay is ignored for synthesis.
+Module <buf1> is correct for synthesis.
+ 
+Analyzing module <Output> in library <work>.
+WARNING:Xst:916 - "Output.v" line 64: Delay is ignored for synthesis.
+WARNING:Xst:916 - "Output.v" line 72: Delay is ignored for synthesis.
+WARNING:Xst:916 - "Output.v" line 87: Delay is ignored for synthesis.
+WARNING:Xst:916 - "Output.v" line 101: Delay is ignored for synthesis.
+WARNING:Xst:916 - "Output.v" line 106: Delay is ignored for synthesis.
+WARNING:Xst:915 - Message (916) is reported only 5 times for each module.
+Module <Output> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <Fe_go> in unit <Sender> has a constant value of 1 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <Reciever>.
+    Related source file is "Reciever.v".
+Unit <Reciever> synthesized.
+
+
+Synthesizing Unit <buf1>.
+    Related source file is "buf.v".
+Unit <buf1> synthesized.
+
+
+Synthesizing Unit <Output>.
+    Related source file is "Output.v".
+INFO:Xst:1608 - Relative priorities of control signals on register <source> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 1-bit latch for signal <data1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Fs_ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <source>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <X0_ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <channel2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <up>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <one_ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <channel1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <down>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <zero_ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Fd_ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Fe_ack>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <Output> synthesized.
+
+
+Synthesizing Unit <FsRefined>.
+    Related source file is "FsRefined.v".
+Unit <FsRefined> synthesized.
+
+
+Synthesizing Unit <Nought>.
+    Related source file is "Nought.v".
+Unit <Nought> synthesized.
+
+
+Synthesizing Unit <One>.
+    Related source file is "One.v".
+Unit <One> synthesized.
+
+
+Synthesizing Unit <X0>.
+    Related source file is "X0.v".
+Unit <X0> synthesized.
+
+
+Synthesizing Unit <Fe>.
+    Related source file is "Fe.v".
+Unit <Fe> synthesized.
+
+
+Synthesizing Unit <Sender>.
+    Related source file is "Sender.v".
+WARNING:Xst:646 - Signal <x0_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <x0_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <x0_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <o1_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <o1_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <n1_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <n1_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fs_clear> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fs_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fs_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fs_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fe_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fe_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fe_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <dt2_senac> equivalent to <dt1_senac> has been removed
+WARNING:Xst:737 - Found 1-bit latch for signal <dt2reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fs_senac>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dt1reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Fe_d>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <x0d_senac>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <x0_d>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <dt1_senac>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <d_fe>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fe_senac>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <Sender> synthesized.
+
+
+Synthesizing Unit <Channel>.
+    Related source file is "Channel.v".
+WARNING:Xst:646 - Signal <dt> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <comp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <E> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <D> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch2_Upx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch2_Downx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch1_Upx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch1_Downx> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Channel> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 21
+ 1-bit latch                                           : 21
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block X0_ack.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block Fs_ack.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 21
+ 1-bit latch                                           : 21
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch Fs_ack hinder the constant cleaning in the block Output.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch X0_ack hinder the constant cleaning in the block Output.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2170 - Unit Channel : the following signal(s) form a combinatorial loop: recieve/D.
+WARNING:Xst:2170 - Unit Channel : the following signal(s) form a combinatorial loop: recieve/A.
+WARNING:Xst:2170 - Unit Channel : the following signal(s) form a combinatorial loop: recieve/B.
+WARNING:Xst:2170 - Unit Channel : the following signal(s) form a combinatorial loop: recieve/E.
+WARNING:Xst:2170 - Unit Channel : the following signal(s) form a combinatorial loop: recieve/C.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Bit0_Out, FS_FSM/A, bit0_fs.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: One_FSM/A, bit1_one1, Bit1_Out.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: One_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: X0_FSM/C.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fe_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Nought_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fe_FSM/C.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: X0_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: X0_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Nought_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: FS_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: One_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: FS_FSM/C.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fe_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: FS_FSM/A.
+
+Optimizing unit <Channel> ...
+
+Optimizing unit <Output> ...
+
+Optimizing unit <Sender> ...
+WARNING:Xst:1293 - FF/Latch <fe_senac> has a constant value of 0 in block <Sender>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Decoder_Output/data1> of sequential type is unconnected in block <Channel>.
+WARNING:Xst:2677 - Node <Decoder_Output/source> of sequential type is unconnected in block <Channel>.
+WARNING:Xst:2677 - Node <Decoder_Output/channel2> of sequential type is unconnected in block <Channel>.
+WARNING:Xst:2677 - Node <Decoder_Output/up> of sequential type is unconnected in block <Channel>.
+WARNING:Xst:2677 - Node <Decoder_Output/channel1> of sequential type is unconnected in block <Channel>.
+WARNING:Xst:2677 - Node <Decoder_Output/down> of sequential type is unconnected in block <Channel>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Channel, actual ratio is 7.
+Latch Decoder_Output/Fs_ack has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Channel.ngr
+Top Level Output File Name         : Channel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 127
+#      GND                         : 1
+#      LUT2                        : 14
+#      LUT2_L                      : 1
+#      LUT3                        : 25
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 61
+#      LUT4_D                      : 2
+#      LUT4_L                      : 3
+#      MUXF5                       : 16
+#      VCC                         : 1
+# FlipFlops/Latches                : 15
+#      LD                          : 2
+#      LD_1                        : 1
+#      LDCPE                       : 2
+#      LDE                         : 1
+#      LDE_1                       : 9
+# IO Buffers                       : 10
+#      IBUF                        : 6
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       60  out of    960     6%  
+ Number of Slice Flip Flops:             14  out of   1920     0%  
+ Number of 4 input LUTs:                109  out of   1920     5%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     83    12%  
+    IOB Flip Flops:                       1
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------+-------------------------------+-------+
+Clock Signal                                 | Clock buffer(FF name)         | Load  |
+---------------------------------------------+-------------------------------+-------+
+Ch2_up_OBUF(recieve/X0:O)                    | NONE(*)(Decoder_Output/Fs_ack)| 2     |
+xo_out(recieve/Fs1:O)                        | NONE(*)(Decoder_Output/X0_ack)| 5     |
+send/dt2reg_not0001(send/dt2reg_not00011:O)  | NONE(*)(send/dt2reg)          | 1     |
+send/dt1(send/FS_FSM/Dt1:O)                  | NONE(*)(send/fs_senac)        | 1     |
+send/dt2reg__and0001(send/dt2reg__and00011:O)| NONE(*)(send/dt1reg)          | 1     |
+send/dt2reg_and0001(send/dt2reg_and00011:O)  | NONE(*)(send/Fe_d)            | 5     |
+---------------------------------------------+-------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+------------------------+-------+
+Control Signal                               | Buffer(FF name)        | Load  |
+---------------------------------------------+------------------------+-------+
+N0(XST_GND:G)                                | NONE(send/dt2reg)      | 2     |
+send/dt2reg__and0001(send/dt2reg__and00011:O)| NONE(send/dt2reg)      | 2     |
+---------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 31.624ns (Maximum Frequency: 31.621MHz)
+   Minimum input arrival time before clock: 32.102ns
+   Maximum output required time after clock: 33.110ns
+   Maximum combinational path delay: 36.577ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'xo_out'
+  Clock period: 31.624ns (frequency: 31.621MHz)
+  Total number of paths / destination ports: 1360 / 9
+-------------------------------------------------------------------------
+Delay:               15.812ns (Levels of Logic = 14)
+  Source:            Decoder_Output/one_ack (LATCH)
+  Destination:       Decoder_Output/X0_ack (LATCH)
+  Source Clock:      xo_out rising
+  Destination Clock: xo_out falling
+
+  Data Path: Decoder_Output/one_ack to Decoder_Output/X0_ack
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            2   0.588   0.383  Decoder_Output/one_ack (Decoder_Output/one_ack)
+     LUT4:I3->O            1   0.612   0.000  recieve/C12 (recieve/C12)
+     MUXF5:I0->O           1   0.278   0.509  recieve/C1_f5 (N11)
+     LUT2:I0->O            1   0.612   0.426  recieve/C0 (recieve/C0)
+     LUT3_D:I1->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->LO         1   0.612   0.103  recieve/A71 (N94)
+     LUT4:I3->O            5   0.612   0.538  Decoder_Output/Fd_ack_0_not00001 (Decoder_Output/Fd_ack_0_not0000)
+     LDE:GE                    0.483          Decoder_Output/X0_ack
+    ----------------------------------------
+    Total                     15.812ns (8.971ns logic, 6.841ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'send/dt2reg_not0001'
+  Clock period: 2.000ns (frequency: 500.012MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.000ns (Levels of Logic = 1)
+  Source:            send/dt2reg (LATCH)
+  Destination:       send/dt2reg (LATCH)
+  Source Clock:      send/dt2reg_not0001 falling
+  Destination Clock: send/dt2reg_not0001 falling
+
+  Data Path: send/dt2reg to send/dt2reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            2   0.588   0.532  send/dt2reg (send/dt2reg)
+     LUT4:I0->O            1   0.612   0.000  send/dt2reg_mux0000 (send/dt2reg_mux0000)
+     LDCPE:D                   0.268          send/dt2reg
+    ----------------------------------------
+    Total                      2.000ns (1.468ns logic, 0.532ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'send/dt1'
+  Clock period: 5.466ns (frequency: 182.952MHz)
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Delay:               5.466ns (Levels of Logic = 5)
+  Source:            send/fs_senac (LATCH)
+  Destination:       send/fs_senac (LATCH)
+  Source Clock:      send/dt1 falling
+  Destination Clock: send/dt1 falling
+
+  Data Path: send/fs_senac to send/fs_senac
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.588   0.426  send/fs_senac (send/fs_senac)
+     LUT4:I1->O            1   0.612   0.000  send/FS_FSM/B2 (send/FS_FSM/B2)
+     MUXF5:I0->O          12   0.278   0.969  send/FS_FSM/B_f5 (send/FS_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/FS_FSM/A2 (send/FS_FSM/A2)
+     MUXF5:I0->O          11   0.278   0.823  send/FS_FSM/A_f5 (send/FS_FSM/A)
+     LUT3:I2->O            4   0.612   0.000  send/FS_FSM/Dt1 (send/dt1)
+     LDCPE:D                   0.268          send/fs_senac
+    ----------------------------------------
+    Total                      5.466ns (3.248ns logic, 2.218ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'send/dt2reg__and0001'
+  Clock period: 2.000ns (frequency: 500.012MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.000ns (Levels of Logic = 1)
+  Source:            send/dt1reg (LATCH)
+  Destination:       send/dt1reg (LATCH)
+  Source Clock:      send/dt2reg__and0001 rising
+  Destination Clock: send/dt2reg__and0001 rising
+
+  Data Path: send/dt1reg to send/dt1reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             2   0.588   0.532  send/dt1reg (send/dt1reg)
+     LUT4:I0->O            1   0.612   0.000  send/dt1reg_mux0000 (send/dt1reg_mux0000)
+     LD_1:D                    0.268          send/dt1reg
+    ----------------------------------------
+    Total                      2.000ns (1.468ns logic, 0.532ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'send/dt2reg_and0001'
+  Clock period: 28.635ns (frequency: 34.922MHz)
+  Total number of paths / destination ports: 76939 / 5
+-------------------------------------------------------------------------
+Delay:               28.635ns (Levels of Logic = 27)
+  Source:            send/x0d_senac (LATCH)
+  Destination:       send/dt1_senac (LATCH)
+  Source Clock:      send/dt2reg_and0001 rising
+  Destination Clock: send/dt2reg_and0001 rising
+
+  Data Path: send/x0d_senac to send/dt1_senac
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            2   0.588   0.449  send/x0d_senac (send/x0d_senac)
+     LUT4:I1->O            1   0.612   0.000  send/X0_FSM/B2 (send/X0_FSM/B2)
+     MUXF5:I0->O           9   0.278   0.849  send/X0_FSM/B_f5 (send/X0_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/X0_FSM/A2 (send/X0_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  send/X0_FSM/A_f5 (send/X0_FSM/A)
+     LUT3_L:I0->LO         1   0.612   0.169  send/Bit1_Out24 (send/Bit1_Out24)
+     LUT4:I1->O            8   0.612   0.712  send/Bit1_Out39 (Ch1_up_OBUF)
+     LUT2:I1->O            1   0.612   0.360  recieve/C3 (recieve/C3)
+     LUT4:I3->O            1   0.612   0.387  recieve/C48 (recieve/C48)
+     LUT3_D:I2->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   1.111  recieve/A71 (recieve/A)
+     LUT4:I0->O            1   0.612   0.000  recieve/ACK1 (recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.754  recieve/ACK_f5 (acknowledge1)
+     LUT2:I0->O           17   0.612   0.962  send/X0_FSM/B11 (send/N0)
+     LUT2:I1->O            1   0.612   0.000  send/Nought_FSM/A1 (send/Nought_FSM/A1)
+     MUXF5:I1->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.690  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT3:I0->O            1   0.612   0.426  send/d_fe_mux0000_SW0 (N50)
+     LUT4:I1->O            1   0.612   0.000  send/d_fe_mux0000 (send/d_fe_mux0000)
+     LDE_1:D                   0.268          send/d_fe
+    ----------------------------------------
+    Total                     28.635ns (15.376ns logic, 13.259ns route)
+                                       (53.7% logic, 46.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'xo_out'
+  Total number of paths / destination ports: 187164 / 9
+-------------------------------------------------------------------------
+Offset:              26.682ns (Levels of Logic = 24)
+  Source:            Reset (PAD)
+  Destination:       Decoder_Output/Fd_ack (LATCH)
+  Destination Clock: xo_out rising
+
+  Data Path: Reset to Decoder_Output/Fd_ack
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.106   1.141  Reset_IBUF (Reset_IBUF)
+     LUT4:I1->O            1   0.612   0.387  send/X0_FSM/C_SW1 (N41)
+     LUT4:I2->O            8   0.612   0.646  send/X0_FSM/C (send/X0_FSM/C)
+     LUT4:I3->O            1   0.612   0.000  send/X0_FSM/B1 (send/X0_FSM/B1)
+     MUXF5:I1->O           9   0.278   0.849  send/X0_FSM/B_f5 (send/X0_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/X0_FSM/A2 (send/X0_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  send/X0_FSM/A_f5 (send/X0_FSM/A)
+     LUT3_L:I0->LO         1   0.612   0.169  send/Bit1_Out24 (send/Bit1_Out24)
+     LUT4:I1->O            8   0.612   0.712  send/Bit1_Out39 (Ch1_up_OBUF)
+     LUT2:I1->O            1   0.612   0.360  recieve/C3 (recieve/C3)
+     LUT4:I3->O            1   0.612   0.387  recieve/C48 (recieve/C48)
+     LUT3_D:I2->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   0.989  recieve/A71 (recieve/A)
+     LUT3:I2->O            2   0.612   0.449  recieve/Fe11 (N26)
+     LUT3:I1->O            1   0.612   0.509  recieve/Fe2 (fd_out)
+     LUT4:I0->O            1   0.612   0.000  Decoder_Output/Fd_ack_mux00001 (Decoder_Output/Fd_ack_mux0000)
+     LDE_1:D                   0.268          Decoder_Output/Fd_ack
+    ----------------------------------------
+    Total                     26.682ns (14.448ns logic, 12.234ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'send/dt2reg_not0001'
+  Total number of paths / destination ports: 77 / 2
+-------------------------------------------------------------------------
+Offset:              11.137ns (Levels of Logic = 10)
+  Source:            Reset (PAD)
+  Destination:       send/dt2reg (LATCH)
+  Destination Clock: send/dt2reg_not0001 falling
+
+  Data Path: Reset to send/dt2reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.106   1.141  Reset_IBUF (Reset_IBUF)
+     LUT4:I1->O            1   0.612   0.387  send/X0_FSM/C_SW1 (N41)
+     LUT4:I2->O            8   0.612   0.646  send/X0_FSM/C (send/X0_FSM/C)
+     LUT4:I3->O            1   0.612   0.000  send/X0_FSM/B1 (send/X0_FSM/B1)
+     MUXF5:I1->O           9   0.278   0.849  send/X0_FSM/B_f5 (send/X0_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/X0_FSM/A2 (send/X0_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  send/X0_FSM/A_f5 (send/X0_FSM/A)
+     LUT3:I0->O            6   0.612   0.721  send/X0_FSM/Dt1 (send/d_x0)
+     LUT3:I0->O            1   0.612   0.426  send/dt2reg_mux0000_SW1 (N84)
+     LUT4:I1->O            1   0.612   0.000  send/dt2reg_mux0000 (send/dt2reg_mux0000)
+     LDCPE:D                   0.268          send/dt2reg
+    ----------------------------------------
+    Total                     11.137ns (6.214ns logic, 4.923ns route)
+                                       (55.8% logic, 44.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'send/dt1'
+  Total number of paths / destination ports: 26 / 2
+-------------------------------------------------------------------------
+Offset:              9.188ns (Levels of Logic = 8)
+  Source:            Reset (PAD)
+  Destination:       send/fs_senac (LATCH)
+  Destination Clock: send/dt1 falling
+
+  Data Path: Reset to send/fs_senac
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.106   1.224  Reset_IBUF (Reset_IBUF)
+     LUT4:I0->O            1   0.612   0.387  send/FS_FSM/C_SW1 (N66)
+     LUT4:I2->O           11   0.612   0.796  send/FS_FSM/C (send/FS_FSM/C)
+     LUT4:I3->O            1   0.612   0.000  send/FS_FSM/B1 (send/FS_FSM/B1)
+     MUXF5:I1->O          12   0.278   0.969  send/FS_FSM/B_f5 (send/FS_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/FS_FSM/A2 (send/FS_FSM/A2)
+     MUXF5:I0->O          11   0.278   0.823  send/FS_FSM/A_f5 (send/FS_FSM/A)
+     LUT3:I2->O            4   0.612   0.000  send/FS_FSM/Dt1 (send/dt1)
+     LDCPE:D                   0.268          send/fs_senac
+    ----------------------------------------
+    Total                      9.188ns (4.990ns logic, 4.198ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'send/dt2reg__and0001'
+  Total number of paths / destination ports: 51 / 1
+-------------------------------------------------------------------------
+Offset:              11.137ns (Levels of Logic = 10)
+  Source:            Reset (PAD)
+  Destination:       send/dt1reg (LATCH)
+  Destination Clock: send/dt2reg__and0001 rising
+
+  Data Path: Reset to send/dt1reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.106   1.141  Reset_IBUF (Reset_IBUF)
+     LUT4:I1->O            1   0.612   0.387  send/X0_FSM/C_SW1 (N41)
+     LUT4:I2->O            8   0.612   0.646  send/X0_FSM/C (send/X0_FSM/C)
+     LUT4:I3->O            1   0.612   0.000  send/X0_FSM/B1 (send/X0_FSM/B1)
+     MUXF5:I1->O           9   0.278   0.849  send/X0_FSM/B_f5 (send/X0_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/X0_FSM/A2 (send/X0_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  send/X0_FSM/A_f5 (send/X0_FSM/A)
+     LUT3:I0->O            6   0.612   0.721  send/X0_FSM/Dt1 (send/d_x0)
+     LUT3:I0->O            1   0.612   0.426  send/dt1reg_mux0000_SW1 (N86)
+     LUT4:I1->O            1   0.612   0.000  send/dt1reg_mux0000 (send/dt1reg_mux0000)
+     LD_1:D                    0.268          send/dt1reg
+    ----------------------------------------
+    Total                     11.137ns (6.214ns logic, 4.923ns route)
+                                       (55.8% logic, 44.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'send/dt2reg_and0001'
+  Total number of paths / destination ports: 748961 / 10
+-------------------------------------------------------------------------
+Offset:              32.102ns (Levels of Logic = 30)
+  Source:            Reset (PAD)
+  Destination:       send/dt1_senac (LATCH)
+  Destination Clock: send/dt2reg_and0001 rising
+
+  Data Path: Reset to send/dt1_senac
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.106   1.141  Reset_IBUF (Reset_IBUF)
+     LUT4:I1->O            1   0.612   0.387  send/X0_FSM/C_SW1 (N41)
+     LUT4:I2->O            8   0.612   0.646  send/X0_FSM/C (send/X0_FSM/C)
+     LUT4:I3->O            1   0.612   0.000  send/X0_FSM/B1 (send/X0_FSM/B1)
+     MUXF5:I1->O           9   0.278   0.849  send/X0_FSM/B_f5 (send/X0_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/X0_FSM/A2 (send/X0_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  send/X0_FSM/A_f5 (send/X0_FSM/A)
+     LUT3_L:I0->LO         1   0.612   0.169  send/Bit1_Out24 (send/Bit1_Out24)
+     LUT4:I1->O            8   0.612   0.712  send/Bit1_Out39 (Ch1_up_OBUF)
+     LUT2:I1->O            1   0.612   0.360  recieve/C3 (recieve/C3)
+     LUT4:I3->O            1   0.612   0.387  recieve/C48 (recieve/C48)
+     LUT3_D:I2->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   1.111  recieve/A71 (recieve/A)
+     LUT4:I0->O            1   0.612   0.000  recieve/ACK1 (recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.754  recieve/ACK_f5 (acknowledge1)
+     LUT2:I0->O           17   0.612   0.962  send/X0_FSM/B11 (send/N0)
+     LUT2:I1->O            1   0.612   0.000  send/Nought_FSM/A1 (send/Nought_FSM/A1)
+     MUXF5:I1->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.690  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT3:I0->O            1   0.612   0.426  send/d_fe_mux0000_SW0 (N50)
+     LUT4:I1->O            1   0.612   0.000  send/d_fe_mux0000 (send/d_fe_mux0000)
+     LDE_1:D                   0.268          send/d_fe
+    ----------------------------------------
+    Total                     32.102ns (17.118ns logic, 14.984ns route)
+                                       (53.3% logic, 46.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'xo_out'
+  Total number of paths / destination ports: 2825 / 2
+-------------------------------------------------------------------------
+Offset:              28.022ns (Levels of Logic = 24)
+  Source:            Decoder_Output/one_ack (LATCH)
+  Destination:       Ch1_down (PAD)
+  Source Clock:      xo_out rising
+
+  Data Path: Decoder_Output/one_ack to Ch1_down
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            2   0.588   0.383  Decoder_Output/one_ack (Decoder_Output/one_ack)
+     LUT4:I3->O            1   0.612   0.000  recieve/C12 (recieve/C12)
+     MUXF5:I0->O           1   0.278   0.509  recieve/C1_f5 (N11)
+     LUT2:I0->O            1   0.612   0.426  recieve/C0 (recieve/C0)
+     LUT3_D:I1->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   1.111  recieve/A71 (recieve/A)
+     LUT4:I0->O            1   0.612   0.000  recieve/ACK1 (recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.754  recieve/ACK_f5 (acknowledge1)
+     LUT2:I0->O           17   0.612   0.962  send/X0_FSM/B11 (send/N0)
+     LUT2:I1->O            1   0.612   0.000  send/Nought_FSM/A1 (send/Nought_FSM/A1)
+     MUXF5:I1->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.607  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT4:I1->O            1   0.612   0.360  send/Bit0_Out21_SW0 (N82)
+     LUT4:I3->O            1   0.612   0.509  send/Bit0_Out21 (send/Bit0_Out21)
+     LUT2:I0->O            7   0.612   0.602  send/Bit0_Out33 (Ch1_down_OBUF)
+     OBUF:I->O                 3.169          Ch1_down_OBUF (Ch1_down)
+    ----------------------------------------
+    Total                     28.022ns (16.163ns logic, 11.859ns route)
+                                       (57.7% logic, 42.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'send/dt2reg_not0001'
+  Total number of paths / destination ports: 6676 / 3
+-------------------------------------------------------------------------
+Offset:              31.801ns (Levels of Logic = 28)
+  Source:            send/dt2reg (LATCH)
+  Destination:       Ch1_down (PAD)
+  Source Clock:      send/dt2reg_not0001 falling
+
+  Data Path: send/dt2reg to Ch1_down
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            2   0.588   0.410  send/dt2reg (send/dt2reg)
+     LUT4:I2->O            1   0.612   0.000  send/One_FSM/A2 (send/One_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.605  send/One_FSM/A_f5 (send/One_FSM/A)
+     LUT4:I3->O            1   0.612   0.000  send/Bit1_Out152 (send/Bit1_Out152)
+     MUXF5:I0->O           1   0.278   0.509  send/Bit1_Out15_f5 (send/Bit1_Out15)
+     LUT4:I0->O            8   0.612   0.712  send/Bit1_Out39 (Ch1_up_OBUF)
+     LUT2:I1->O            1   0.612   0.360  recieve/C3 (recieve/C3)
+     LUT4:I3->O            1   0.612   0.387  recieve/C48 (recieve/C48)
+     LUT3_D:I2->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   1.111  recieve/A71 (recieve/A)
+     LUT4:I0->O            1   0.612   0.000  recieve/ACK1 (recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.754  recieve/ACK_f5 (acknowledge1)
+     LUT2:I0->O           17   0.612   0.962  send/X0_FSM/B11 (send/N0)
+     LUT2:I1->O            1   0.612   0.000  send/Nought_FSM/A1 (send/Nought_FSM/A1)
+     MUXF5:I1->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.607  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT4:I1->O            1   0.612   0.360  send/Bit0_Out21_SW0 (N82)
+     LUT4:I3->O            1   0.612   0.509  send/Bit0_Out21 (send/Bit0_Out21)
+     LUT2:I0->O            7   0.612   0.602  send/Bit0_Out33 (Ch1_down_OBUF)
+     OBUF:I->O                 3.169          Ch1_down_OBUF (Ch1_down)
+    ----------------------------------------
+    Total                     31.801ns (18.277ns logic, 13.524ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'send/dt2reg_and0001'
+  Total number of paths / destination ports: 40062 / 3
+-------------------------------------------------------------------------
+Offset:              33.110ns (Levels of Logic = 29)
+  Source:            send/x0d_senac (LATCH)
+  Destination:       Ch1_down (PAD)
+  Source Clock:      send/dt2reg_and0001 rising
+
+  Data Path: send/x0d_senac to Ch1_down
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            2   0.588   0.449  send/x0d_senac (send/x0d_senac)
+     LUT4:I1->O            1   0.612   0.000  send/X0_FSM/B2 (send/X0_FSM/B2)
+     MUXF5:I0->O           9   0.278   0.849  send/X0_FSM/B_f5 (send/X0_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/X0_FSM/A2 (send/X0_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  send/X0_FSM/A_f5 (send/X0_FSM/A)
+     LUT3_L:I0->LO         1   0.612   0.169  send/Bit1_Out24 (send/Bit1_Out24)
+     LUT4:I1->O            8   0.612   0.712  send/Bit1_Out39 (Ch1_up_OBUF)
+     LUT2:I1->O            1   0.612   0.360  recieve/C3 (recieve/C3)
+     LUT4:I3->O            1   0.612   0.387  recieve/C48 (recieve/C48)
+     LUT3_D:I2->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   1.111  recieve/A71 (recieve/A)
+     LUT4:I0->O            1   0.612   0.000  recieve/ACK1 (recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.754  recieve/ACK_f5 (acknowledge1)
+     LUT2:I0->O           17   0.612   0.962  send/X0_FSM/B11 (send/N0)
+     LUT2:I1->O            1   0.612   0.000  send/Nought_FSM/A1 (send/Nought_FSM/A1)
+     MUXF5:I1->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.607  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT4:I1->O            1   0.612   0.360  send/Bit0_Out21_SW0 (N82)
+     LUT4:I3->O            1   0.612   0.509  send/Bit0_Out21 (send/Bit0_Out21)
+     LUT2:I0->O            7   0.612   0.602  send/Bit0_Out33 (Ch1_down_OBUF)
+     OBUF:I->O                 3.169          Ch1_down_OBUF (Ch1_down)
+    ----------------------------------------
+    Total                     33.110ns (18.889ns logic, 14.221ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'send/dt1'
+  Total number of paths / destination ports: 20030 / 3
+-------------------------------------------------------------------------
+Offset:              32.495ns (Levels of Logic = 28)
+  Source:            send/fs_senac (LATCH)
+  Destination:       Ch1_down (PAD)
+  Source Clock:      send/dt1 falling
+
+  Data Path: send/fs_senac to Ch1_down
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.588   0.426  send/fs_senac (send/fs_senac)
+     LUT4:I1->O            1   0.612   0.000  send/FS_FSM/B2 (send/FS_FSM/B2)
+     MUXF5:I0->O          12   0.278   0.969  send/FS_FSM/B_f5 (send/FS_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/FS_FSM/A2 (send/FS_FSM/A2)
+     MUXF5:I0->O          11   0.278   0.823  send/FS_FSM/A_f5 (send/FS_FSM/A)
+     LUT4:I2->O            8   0.612   0.712  send/Bit1_Out39 (Ch1_up_OBUF)
+     LUT2:I1->O            1   0.612   0.360  recieve/C3 (recieve/C3)
+     LUT4:I3->O            1   0.612   0.387  recieve/C48 (recieve/C48)
+     LUT3_D:I2->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   1.111  recieve/A71 (recieve/A)
+     LUT4:I0->O            1   0.612   0.000  recieve/ACK1 (recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.754  recieve/ACK_f5 (acknowledge1)
+     LUT2:I0->O           17   0.612   0.962  send/X0_FSM/B11 (send/N0)
+     LUT2:I1->O            1   0.612   0.000  send/Nought_FSM/A1 (send/Nought_FSM/A1)
+     MUXF5:I1->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.607  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT4:I1->O            1   0.612   0.360  send/Bit0_Out21_SW0 (N82)
+     LUT4:I3->O            1   0.612   0.509  send/Bit0_Out21 (send/Bit0_Out21)
+     LUT2:I0->O            7   0.612   0.602  send/Bit0_Out33 (Ch1_down_OBUF)
+     OBUF:I->O                 3.169          Ch1_down_OBUF (Ch1_down)
+    ----------------------------------------
+    Total                     32.495ns (18.277ns logic, 14.218ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Ch2_up_OBUF'
+  Total number of paths / destination ports: 26 / 3
+-------------------------------------------------------------------------
+Offset:              16.932ns (Levels of Logic = 14)
+  Source:            Decoder_Output/Fs_ack (LATCH)
+  Destination:       Ch1_down (PAD)
+  Source Clock:      Ch2_up_OBUF falling
+
+  Data Path: Decoder_Output/Fs_ack to Ch1_down
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.509  Decoder_Output/Fs_ack (Decoder_Output/Fs_ack)
+     LUT4:I0->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   1.111  recieve/A71 (recieve/A)
+     LUT4:I0->O            1   0.612   0.000  recieve/ACK1 (recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.754  recieve/ACK_f5 (acknowledge1)
+     LUT2:I0->O           17   0.612   0.962  send/X0_FSM/B11 (send/N0)
+     LUT2:I1->O            1   0.612   0.000  send/Nought_FSM/A1 (send/Nought_FSM/A1)
+     MUXF5:I1->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.607  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT4:I1->O            1   0.612   0.360  send/Bit0_Out21_SW0 (N82)
+     LUT4:I3->O            1   0.612   0.509  send/Bit0_Out21 (send/Bit0_Out21)
+     LUT2:I0->O            7   0.612   0.602  send/Bit0_Out33 (Ch1_down_OBUF)
+     OBUF:I->O                 3.169          Ch1_down_OBUF (Ch1_down)
+    ----------------------------------------
+    Total                     16.932ns (10.377ns logic, 6.555ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'send/dt2reg__and0001'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              10.615ns (Levels of Logic = 8)
+  Source:            send/dt1reg (LATCH)
+  Destination:       Ch1_down (PAD)
+  Source Clock:      send/dt2reg__and0001 rising
+
+  Data Path: send/dt1reg to Ch1_down
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD_1:G->Q             2   0.588   0.410  send/dt1reg (send/dt1reg)
+     LUT4:I2->O            1   0.612   0.000  send/Nought_FSM/A2 (send/Nought_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.607  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT4:I1->O            1   0.612   0.360  send/Bit0_Out21_SW0 (N82)
+     LUT4:I3->O            1   0.612   0.509  send/Bit0_Out21 (send/Bit0_Out21)
+     LUT2:I0->O            7   0.612   0.602  send/Bit0_Out33 (Ch1_down_OBUF)
+     OBUF:I->O                 3.169          Ch1_down_OBUF (Ch1_down)
+    ----------------------------------------
+    Total                     10.615ns (7.373ns logic, 3.242ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 390042 / 3
+-------------------------------------------------------------------------
+Delay:               36.577ns (Levels of Logic = 32)
+  Source:            Reset (PAD)
+  Destination:       Ch1_down (PAD)
+
+  Data Path: Reset to Ch1_down
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.106   1.141  Reset_IBUF (Reset_IBUF)
+     LUT4:I1->O            1   0.612   0.387  send/X0_FSM/C_SW1 (N41)
+     LUT4:I2->O            8   0.612   0.646  send/X0_FSM/C (send/X0_FSM/C)
+     LUT4:I3->O            1   0.612   0.000  send/X0_FSM/B1 (send/X0_FSM/B1)
+     MUXF5:I1->O           9   0.278   0.849  send/X0_FSM/B_f5 (send/X0_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  send/X0_FSM/A2 (send/X0_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  send/X0_FSM/A_f5 (send/X0_FSM/A)
+     LUT3_L:I0->LO         1   0.612   0.169  send/Bit1_Out24 (send/Bit1_Out24)
+     LUT4:I1->O            8   0.612   0.712  send/Bit1_Out39 (Ch1_up_OBUF)
+     LUT2:I1->O            1   0.612   0.360  recieve/C3 (recieve/C3)
+     LUT4:I3->O            1   0.612   0.387  recieve/C48 (recieve/C48)
+     LUT3_D:I2->O         22   0.612   1.141  recieve/C78 (recieve/C)
+     LUT2:I0->O            1   0.612   0.360  recieve/B20 (recieve/B20)
+     LUT4_L:I3->LO         1   0.612   0.169  recieve/B33 (recieve/B33)
+     LUT3_D:I1->O         22   0.612   1.019  recieve/B100 (recieve/B)
+     LUT4:I2->O            1   0.612   0.360  recieve/D32 (recieve/D32)
+     LUT4:I3->O            1   0.612   0.426  recieve/D48 (recieve/D48)
+     LUT3:I1->O           22   0.612   1.019  recieve/D134 (recieve/D)
+     LUT4:I2->O            1   0.612   0.000  recieve/A351 (recieve/A351)
+     MUXF5:I1->O           1   0.278   0.387  recieve/A35_f5 (recieve/A35)
+     LUT4_D:I2->O         21   0.612   1.111  recieve/A71 (recieve/A)
+     LUT4:I0->O            1   0.612   0.000  recieve/ACK1 (recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.754  recieve/ACK_f5 (acknowledge1)
+     LUT2:I0->O           17   0.612   0.962  send/X0_FSM/B11 (send/N0)
+     LUT2:I1->O            1   0.612   0.000  send/Nought_FSM/A1 (send/Nought_FSM/A1)
+     MUXF5:I1->O           7   0.278   0.754  send/Nought_FSM/A_f5 (send/Nought_FSM/A)
+     LUT2:I0->O            1   0.612   0.000  send/Nought_FSM/B2 (send/Nought_FSM/B2)
+     MUXF5:I0->O           5   0.278   0.607  send/Nought_FSM/B_f5 (send/Nought_FSM/B)
+     LUT4:I1->O            1   0.612   0.360  send/Bit0_Out21_SW0 (N82)
+     LUT4:I3->O            1   0.612   0.509  send/Bit0_Out21 (send/Bit0_Out21)
+     LUT2:I0->O            7   0.612   0.602  send/Bit0_Out33 (Ch1_down_OBUF)
+     OBUF:I->O                 3.169          Ch1_down_OBUF (Ch1_down)
+    ----------------------------------------
+    Total                     36.577ns (20.631ns logic, 15.946ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.65 secs
+ 
+--> 
+
+Total memory usage is 215116 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   84 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

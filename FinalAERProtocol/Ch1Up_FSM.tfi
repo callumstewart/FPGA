@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+Ch1Up_FSM instance_name (
+    .Ch1Up(Ch1Up), 
+    .Gnt1(Gnt1), 
+    .Fs_sen(Fs_sen), 
+    .Fe_d(Fe_d), 
+    .reset(reset), 
+    .Req1(Req1), 
+    .Ch1(Ch1), 
+    .Up(Up), 
+    .go(go), 
+    .A(A), 
+    .B(B), 
+    .C(C)
+    );
+
+
