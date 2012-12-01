@@ -1,0 +1,29 @@
+Command line:
+   AER_Output_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62025
+
+Fri Nov 30 23:22:49 2012
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 503.144 Meg
+
+ Total Signals          : 98
+ Total Nets             : 47
+ Total Signal Drivers   : 38
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 40
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 130
+Total Line Count : 88
+
+ Total Simulation Time: 0.0312 sec
+
+ Current Memory Usage: 504.193 Meg
+
+Fri Nov 30 23:23:02 2012
+

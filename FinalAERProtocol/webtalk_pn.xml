@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Fri Nov 30 01:50:23 2012">
+<application name="pn" timeStamp="Fri Nov 30 23:31:41 2012">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="F8D5E9FE52FC44FAB5EE302B06EA6FB5" type="project"/>
-<property name="ProjectIteration" value="1" type="project"/>
+<property name="ProjectIteration" value="2" type="project"/>
 <property name="ProjectFile" value="C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/FinalAERProtocol.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2012-11-29T20:35:45" type="project"/>
 </section>
@@ -18,7 +18,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/Arbiter_Test" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/AER_Output_Test" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -26,11 +26,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2012-11-29T20:35:45" type="design"/>
 <property name="PROP_intWbtProjectID" value="F8D5E9FE52FC44FAB5EE302B06EA6FB5" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="2" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.Arbiter_Test" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.AER_Output_Test" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Spartan3E" type="design"/>
@@ -40,7 +40,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-5" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
-<property name="FILE_VERILOG" value="19" type="source"/>
+<property name="FILE_VERILOG" value="30" type="source"/>
 </section>
 </application>
 </document>

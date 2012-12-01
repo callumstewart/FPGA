@@ -22,6 +22,42 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="FinalAERProtocol.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="AER_Channel.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="AER_Channel.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="AER_Channel.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="AER_Channel.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="AER_Channel.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="AER_Channel.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="AER_Channel.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="AER_Channel.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="AER_Channel.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="AER_Channel.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AER_Channel.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="AER_Channel.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="AER_Channel.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="AER_Channel.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="AER_Channel.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="AER_Channel.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="AER_Channel.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="AER_Channel.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="AER_Channel.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="AER_Channel_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="AER_Channel_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="AER_Channel_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AER_Channel_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="AER_Channel_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="AER_Channel_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="AER_Channel_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AER_Channel_map.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="AER_Channel_map_fpga_editor.log"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AER_Channel_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="AER_Channel_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="AER_Channel_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AER_Channel_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="AER_Channel_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="AER_Channel_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="AER_Channel_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AER_Channel_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="AER_Input.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="AER_Input.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="AER_Input.ngc"/>
@@ -37,6 +73,20 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="AER_Input_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="AER_Input_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AER_Input_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="AER_Output.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="AER_Output.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="AER_Output.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="AER_Output.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AER_Output.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="AER_Output.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="AER_Output.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="AER_Output.tfi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="AER_Output.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AER_Output_Test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="AER_Output_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="AER_Output_Test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="AER_Output_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="AER_Output_xst.xrpt"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Arbiter.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Arbiter.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Arbiter.ngc"/>
@@ -51,6 +101,8 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Arbiter_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Arbiter_xst.xrpt"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Buff.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Buffack.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="BufferFe.tfi"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Ch1Down_FSM.tfi"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Ch1Up_FSM.tfi"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Ch2Down_FSM.tfi"/>
@@ -60,6 +112,10 @@
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="ME.tfi"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Nought.tfi"/>
     <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="One.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="OutputDecoder.tfi"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="OutputDecoder_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Reciever.tfi"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Reciever_Test_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Sender.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Sender.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Sender.lso"/>
@@ -130,107 +186,209 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1354227360" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1354227360">
+    <transform xil_pn:end_ts="1354317764" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1354317764">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354243099" xil_pn:in_ck="7060527436033181947" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1354243099">
+    <transform xil_pn:end_ts="1354317764" xil_pn:in_ck="1544490140780095511" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1354317764">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="AER_Channel.v"/>
+      <outfile xil_pn:name="AER_Channel_Test.v"/>
+      <outfile xil_pn:name="AER_Input.v"/>
+      <outfile xil_pn:name="AER_Input_Test.v"/>
+      <outfile xil_pn:name="AER_Output.v"/>
+      <outfile xil_pn:name="AER_Output_Test.v"/>
+      <outfile xil_pn:name="Arbiter.v"/>
+      <outfile xil_pn:name="Arbiter_Test.v"/>
+      <outfile xil_pn:name="Buffack.v"/>
+      <outfile xil_pn:name="BufferFe.v"/>
+      <outfile xil_pn:name="Ch1Down_FSM.v"/>
+      <outfile xil_pn:name="Ch1Up_FSM.v"/>
+      <outfile xil_pn:name="Ch2Down_FSM.v"/>
+      <outfile xil_pn:name="Ch2Up_FSM.v"/>
+      <outfile xil_pn:name="Fe.v"/>
+      <outfile xil_pn:name="FsRefined.v"/>
+      <outfile xil_pn:name="ME.v"/>
+      <outfile xil_pn:name="Nand.v"/>
+      <outfile xil_pn:name="Nor.v"/>
+      <outfile xil_pn:name="Nought.v"/>
+      <outfile xil_pn:name="One.v"/>
+      <outfile xil_pn:name="OutputDecoder.v"/>
+      <outfile xil_pn:name="OutputDecoder_Test.v"/>
+      <outfile xil_pn:name="Reciever.v"/>
+      <outfile xil_pn:name="Reciever_Test.v"/>
+      <outfile xil_pn:name="Sender.v"/>
+      <outfile xil_pn:name="SenderControl.v"/>
+      <outfile xil_pn:name="SenderControl_Test.v"/>
+      <outfile xil_pn:name="Sender_Test.v"/>
+      <outfile xil_pn:name="X0.v"/>
     </transform>
-    <transform xil_pn:end_ts="1354242320" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="843599386898051773" xil_pn:start_ts="1354242320">
+    <transform xil_pn:end_ts="1354317764" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1814032622229991394" xil_pn:start_ts="1354317764">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354242320" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6848204451376764991" xil_pn:start_ts="1354242320">
+    <transform xil_pn:end_ts="1354317764" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6796836148537936928" xil_pn:start_ts="1354317764">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354240510" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4568243542417851530" xil_pn:start_ts="1354240510">
+    <transform xil_pn:end_ts="1354317764" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3665884380172402259" xil_pn:start_ts="1354317764">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354243099" xil_pn:in_ck="7060527436033181947" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1354243099">
+    <transform xil_pn:end_ts="1354317764" xil_pn:in_ck="1544490140780095511" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1354317764">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="AER_Channel.v"/>
+      <outfile xil_pn:name="AER_Channel_Test.v"/>
+      <outfile xil_pn:name="AER_Input.v"/>
+      <outfile xil_pn:name="AER_Input_Test.v"/>
+      <outfile xil_pn:name="AER_Output.v"/>
+      <outfile xil_pn:name="AER_Output_Test.v"/>
+      <outfile xil_pn:name="Arbiter.v"/>
+      <outfile xil_pn:name="Arbiter_Test.v"/>
+      <outfile xil_pn:name="Buffack.v"/>
+      <outfile xil_pn:name="BufferFe.v"/>
+      <outfile xil_pn:name="Ch1Down_FSM.v"/>
+      <outfile xil_pn:name="Ch1Up_FSM.v"/>
+      <outfile xil_pn:name="Ch2Down_FSM.v"/>
+      <outfile xil_pn:name="Ch2Up_FSM.v"/>
+      <outfile xil_pn:name="Fe.v"/>
+      <outfile xil_pn:name="FsRefined.v"/>
+      <outfile xil_pn:name="ME.v"/>
+      <outfile xil_pn:name="Nand.v"/>
+      <outfile xil_pn:name="Nor.v"/>
+      <outfile xil_pn:name="Nought.v"/>
+      <outfile xil_pn:name="One.v"/>
+      <outfile xil_pn:name="OutputDecoder.v"/>
+      <outfile xil_pn:name="OutputDecoder_Test.v"/>
+      <outfile xil_pn:name="Reciever.v"/>
+      <outfile xil_pn:name="Reciever_Test.v"/>
+      <outfile xil_pn:name="Sender.v"/>
+      <outfile xil_pn:name="SenderControl.v"/>
+      <outfile xil_pn:name="SenderControl_Test.v"/>
+      <outfile xil_pn:name="Sender_Test.v"/>
+      <outfile xil_pn:name="X0.v"/>
     </transform>
-    <transform xil_pn:end_ts="1354243104" xil_pn:in_ck="7060527436033181947" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8837562896673296475" xil_pn:start_ts="1354243099">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1354243104" xil_pn:in_ck="-4038577337942332085" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7746597306095289694" xil_pn:start_ts="1354243104">
+    <transform xil_pn:end_ts="1354317767" xil_pn:in_ck="1544490140780095511" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3545847366138282301" xil_pn:start_ts="1354317764">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="AER_Output_Test_beh.prj"/>
+      <outfile xil_pn:name="AER_Output_Test_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1354317768" xil_pn:in_ck="6963870238748674455" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7915436825830665408" xil_pn:start_ts="1354317767">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AER_Output_Test_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1354224238" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1354224236">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354240158" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-9160574383767328896" xil_pn:start_ts="1354240157">
+    <transform xil_pn:end_ts="1354314422" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8519838016432972585" xil_pn:start_ts="1354314422">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354240158" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4568243542417851530" xil_pn:start_ts="1354240158">
+    <transform xil_pn:end_ts="1354314422" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="3665884380172402259" xil_pn:start_ts="1354314422">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354240158" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1354240158">
+    <transform xil_pn:end_ts="1354314422" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1354314422">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354240158" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3373523356888180734" xil_pn:start_ts="1354240158">
+    <transform xil_pn:end_ts="1354314422" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7561663045214763815" xil_pn:start_ts="1354314422">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354240158" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1354240158">
+    <transform xil_pn:end_ts="1354314422" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1354314422">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354240158" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5092534954885152044" xil_pn:start_ts="1354240158">
+    <transform xil_pn:end_ts="1354314422" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2277777168354068707" xil_pn:start_ts="1354314422">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1354240229" xil_pn:in_ck="4440537811967046485" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-1054240464259313059" xil_pn:start_ts="1354240222">
+    <transform xil_pn:end_ts="1354317816" xil_pn:in_ck="7601686792065624329" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6759804771770928474" xil_pn:start_ts="1354317809">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AER_Channel.lso"/>
+      <outfile xil_pn:name="AER_Channel.ngc"/>
+      <outfile xil_pn:name="AER_Channel.ngr"/>
+      <outfile xil_pn:name="AER_Channel.prj"/>
+      <outfile xil_pn:name="AER_Channel.stx"/>
+      <outfile xil_pn:name="AER_Channel.syr"/>
+      <outfile xil_pn:name="AER_Channel.xst"/>
+      <outfile xil_pn:name="AER_Channel_xst.xrpt"/>
+      <outfile xil_pn:name="AER_Input.ngr"/>
+      <outfile xil_pn:name="AER_Output.ngr"/>
+      <outfile xil_pn:name="Arbiter.ngr"/>
+      <outfile xil_pn:name="Sender.ngr"/>
+      <outfile xil_pn:name="SenderControl.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1354235918" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5069202360745750691" xil_pn:start_ts="1354235918">
+    <transform xil_pn:end_ts="1354318222" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5884328766789993646" xil_pn:start_ts="1354318222">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1354318230" xil_pn:in_ck="7158426855481839887" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8428302719091752330" xil_pn:start_ts="1354318222">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AER_Channel.bld"/>
+      <outfile xil_pn:name="AER_Channel.ngd"/>
+      <outfile xil_pn:name="AER_Channel_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1354318238" xil_pn:in_ck="4624167160586116552" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3236488012892527759" xil_pn:start_ts="1354318230">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AER_Channel.pcf"/>
+      <outfile xil_pn:name="AER_Channel_map.map"/>
+      <outfile xil_pn:name="AER_Channel_map.mrp"/>
+      <outfile xil_pn:name="AER_Channel_map.ncd"/>
+      <outfile xil_pn:name="AER_Channel_map.ngm"/>
+      <outfile xil_pn:name="AER_Channel_map.xrpt"/>
+      <outfile xil_pn:name="AER_Channel_summary.xml"/>
+      <outfile xil_pn:name="AER_Channel_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1354318310" xil_pn:in_ck="6894903654100064497" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1354318300">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AER_Channel.ncd"/>
+      <outfile xil_pn:name="AER_Channel.pad"/>
+      <outfile xil_pn:name="AER_Channel.par"/>
+      <outfile xil_pn:name="AER_Channel.ptwx"/>
+      <outfile xil_pn:name="AER_Channel.unroutes"/>
+      <outfile xil_pn:name="AER_Channel.xpi"/>
+      <outfile xil_pn:name="AER_Channel_pad.csv"/>
+      <outfile xil_pn:name="AER_Channel_pad.txt"/>
+      <outfile xil_pn:name="AER_Channel_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1354318310" xil_pn:in_ck="5749281211386827255" xil_pn:name="TRAN_XPower" xil_pn:prop_ck="-8418309457391499013" xil_pn:start_ts="1354318310">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1354318310" xil_pn:in_ck="5749281211386827255" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1354318307">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="AER_Channel.twr"/>
+      <outfile xil_pn:name="AER_Channel.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>
 

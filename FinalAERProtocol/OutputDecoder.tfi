@@ -1,0 +1,31 @@
+
+
+
+// Instantiate the module
+OutputDecoder instance_name (
+    .Fs(Fs), 
+    .X0(X0), 
+    .Zero(Zero), 
+    .One(One), 
+    .Fe(Fe), 
+    .reset(reset), 
+    .Fs_ack(Fs_ack), 
+    .X0_ack(X0_ack), 
+    .Zero_ack(Zero_ack), 
+    .One_ack(One_ack), 
+    .Fe_ack(Fe_ack), 
+    .S0(S0), 
+    .S1(S1), 
+    .D0(D0), 
+    .D1(D1), 
+    .A(A), 
+    .B(B), 
+    .C(C), 
+    .D(D), 
+    .Ch1Up(Ch1Up), 
+    .Ch1Down(Ch1Down), 
+    .Ch2Up(Ch2Up), 
+    .Ch2Down(Ch2Down)
+    );
+
+

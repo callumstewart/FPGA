@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+Buffack instance_name (
+    .A(A), 
+    .B(B)
+    );
+
+

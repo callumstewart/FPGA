@@ -1,0 +1,364 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Reading design: AER_Output.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "AER_Output.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "AER_Output"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : AER_Output
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Reciever.v" in library work
+Compiling verilog file "OutputDecoder.v" in library work
+Module <Reciever> compiled
+Compiling verilog file "AER_Output.v" in library work
+Module <OutputDecoder> compiled
+Module <AER_Output> compiled
+No errors in compilation
+Analysis of file <"AER_Output.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <AER_Output> in library <work>.
+
+Analyzing hierarchy for module <Reciever> in library <work>.
+
+Analyzing hierarchy for module <OutputDecoder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <AER_Output>.
+Module <AER_Output> is correct for synthesis.
+ 
+Analyzing module <Reciever> in library <work>.
+Module <Reciever> is correct for synthesis.
+ 
+Analyzing module <OutputDecoder> in library <work>.
+Module <OutputDecoder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Reciever>.
+    Related source file is "Reciever.v".
+Unit <Reciever> synthesized.
+
+
+Synthesizing Unit <OutputDecoder>.
+    Related source file is "OutputDecoder.v".
+Unit <OutputDecoder> synthesized.
+
+
+Synthesizing Unit <AER_Output>.
+    Related source file is "AER_Output.v".
+WARNING:Xst:646 - Signal <S1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_E> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_D> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <NOT_USED> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <Fd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decode_D> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decode_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decode_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decode_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <D1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <D0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <AER_Output> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit AER_Output : the following signal(s) form a combinatorial loop: Recieve/A.
+WARNING:Xst:2170 - Unit AER_Output : the following signal(s) form a combinatorial loop: Recieve/B.
+WARNING:Xst:2170 - Unit AER_Output : the following signal(s) form a combinatorial loop: Recieve/C.
+WARNING:Xst:2170 - Unit AER_Output : the following signal(s) form a combinatorial loop: Recieve/D.
+WARNING:Xst:2170 - Unit AER_Output : the following signal(s) form a combinatorial loop: Recieve/E.
+WARNING:Xst:2170 - Unit OutputDecoder : the following signal(s) form a combinatorial loop: B.
+WARNING:Xst:2170 - Unit OutputDecoder : the following signal(s) form a combinatorial loop: D.
+WARNING:Xst:2170 - Unit OutputDecoder : the following signal(s) form a combinatorial loop: C.
+WARNING:Xst:2170 - Unit OutputDecoder : the following signal(s) form a combinatorial loop: A.
+
+Optimizing unit <AER_Output> ...
+
+Optimizing unit <OutputDecoder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block AER_Output, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : AER_Output.ngr
+Top Level Output File Name         : AER_Output
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 84
+#      GND                         : 1
+#      LUT2                        : 8
+#      LUT3                        : 16
+#      LUT4                        : 44
+#      MUXF5                       : 15
+# IO Buffers                       : 8
+#      IBUF                        : 3
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       41  out of    960     4%  
+ Number of 4 input LUTs:                 68  out of   1920     3%  
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of     83     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 36.114ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 75747 / 5
+-------------------------------------------------------------------------
+Delay:               36.114ns (Levels of Logic = 30)
+  Source:            reset (PAD)
+  Destination:       ack (PAD)
+
+  Data Path: reset to ack
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.106   0.849  reset_IBUF (reset_IBUF)
+     LUT3:I0->O           18   0.612   1.060  Decode/A72 (Decode/A)
+     LUT4:I0->O           19   0.612   1.074  Decode/C (Decode/C)
+     LUT4:I0->O            1   0.612   0.000  Decode/B701 (Decode/B701)
+     MUXF5:I1->O           1   0.278   0.387  Decode/B70_f5 (Decode/B70)
+     LUT3:I2->O           17   0.612   1.045  Decode/B88 (Decode/B)
+     LUT2:I0->O            4   0.612   0.651  Decode/D21 (Decode/N01)
+     LUT3:I0->O            1   0.612   0.509  Decode/D40 (Decode/D40)
+     LUT4:I0->O           19   0.612   1.074  Decode/D56 (Decode/D)
+     LUT4:I0->O            1   0.612   0.509  Recieve/C1311 (Recieve/C1311)
+     LUT4:I0->O            1   0.612   0.426  Recieve/C159 (Recieve/C159)
+     LUT3:I1->O            1   0.612   0.426  Recieve/C185 (N11)
+     LUT4:I1->O            1   0.612   0.000  Recieve/C491 (Recieve/C49)
+     MUXF5:I1->O          21   0.278   0.962  Recieve/C49_f5 (Recieve/C)
+     LUT4:I3->O            1   0.612   0.000  Recieve/E122 (Recieve/E122)
+     MUXF5:I0->O           1   0.278   0.357  Recieve/E12_f5 (Recieve/E12)
+     MUXF5:S->O            1   0.641   0.426  Recieve/E31_f5 (Recieve/E31)
+     LUT3:I1->O           18   0.612   1.060  Recieve/E93 (Recieve/E)
+     LUT3:I0->O            1   0.612   0.426  Recieve/D26 (Recieve/D26)
+     LUT4:I1->O            1   0.612   0.426  Recieve/D49 (Recieve/D49)
+     LUT3:I1->O           19   0.612   0.991  Recieve/D139 (Recieve/D)
+     LUT2:I1->O            1   0.612   0.426  Recieve/B15 (Recieve/B15)
+     LUT4:I1->O            1   0.612   0.426  Recieve/B33 (Recieve/B33)
+     LUT3:I1->O           20   0.612   1.006  Recieve/B83 (Recieve/B)
+     LUT4:I1->O            1   0.612   0.000  Recieve/A771 (Recieve/A771)
+     MUXF5:I0->O           1   0.278   0.360  Recieve/A77_f5 (Recieve/A77)
+     LUT4:I3->O           21   0.612   1.111  Recieve/A96 (Recieve/A)
+     LUT4:I0->O            1   0.612   0.000  Recieve/ACK1 (Recieve/ACK)
+     MUXF5:I1->O           1   0.278   0.357  Recieve/ACK_f5 (ack_OBUF)
+     OBUF:I->O                 3.169          ack_OBUF (ack)
+    ----------------------------------------
+    Total                     36.114ns (19.770ns logic, 16.344ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.45 secs
+ 
+--> 
+
+Total memory usage is 212428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

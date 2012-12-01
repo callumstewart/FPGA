@@ -1,0 +1,3 @@
+verilog work "Reciever.v"
+verilog work "OutputDecoder.v"
+verilog work "AER_Output.v"

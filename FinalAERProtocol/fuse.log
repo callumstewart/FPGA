@@ -1,52 +1,27 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Input_Test_isim_beh.exe" -prj "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Input_Test_beh.prj" "work.AER_Input_Test" "work.glbl" 
+Running: G:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Output_Test_isim_beh.exe -prj C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Output_Test_beh.prj work.AER_Output_Test work.glbl 
 ISim P.28xd (signature 0x1048c146)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Nor.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Nand.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/X0.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/SenderControl.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/One.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Nought.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/ME.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/FsRefined.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Fe.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Ch2Up_FSM.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Ch2Down_FSM.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Ch1Up_FSM.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Ch1Down_FSM.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Sender.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Buff.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Arbiter.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Input.v" into library work
-Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Input_Test.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/Reciever.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/OutputDecoder.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/BufferFe.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Output.v" into library work
+Analyzing Verilog file "C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Output_Test.v" into library work
 Analyzing Verilog file "G:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 117448 KB
-Fuse CPU Usage: 280 ms
-Compiling module Ch1Up_FSM
-Compiling module Ch1Down_FSM
-Compiling module Ch2Up_FSM
-Compiling module Ch2Down_FSM
-Compiling module Nand
-Compiling module Nor
-Compiling module ME
-Compiling module Arbiter
-Compiling module SenderControl
-Compiling module FsRefined
-Compiling module One
-Compiling module Nought
-Compiling module X0
-Compiling module Fe
-Compiling module Sender
-Compiling module AER_Input
-Compiling module AER_Input_Test
+Fuse Memory Usage: 117960 KB
+Fuse CPU Usage: 202 ms
+Compiling module Reciever
+Compiling module OutputDecoder
+Compiling module BufferFe
+Compiling module AER_Output
+Compiling module AER_Output_Test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 11 sub-compilation(s) to finish...
-Compiled 18 Verilog Units
-Built simulation executable C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Input_Test_isim_beh.exe
-Fuse Memory Usage: 125364 KB
-Fuse CPU Usage: 748 ms
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable C:/Users/Callum/Desktop/FPGA/FinalAERProtocol/AER_Output_Test_isim_beh.exe
+Fuse Memory Usage: 125876 KB
+Fuse CPU Usage: 389 ms

@@ -1,0 +1,29 @@
+
+
+
+// Instantiate the module
+Reciever instance_name (
+    .reset(reset), 
+    .ZERO_IN(ZERO_IN), 
+    .ONE_IN(ONE_IN), 
+    .ONE_ACK(ONE_ACK), 
+    .ZERO_ACK(ZERO_ACK), 
+    .FS_ACK(FS_ACK), 
+    .FE_ACK(FE_ACK), 
+    .X0_ACK(X0_ACK), 
+    .FD_ACK(FD_ACK), 
+    .ACK(ACK), 
+    .Fs(Fs), 
+    .Fe(Fe), 
+    .Fd(Fd), 
+    .X0(X0), 
+    .ZERO_OUT(ZERO_OUT), 
+    .ONE_OUT(ONE_OUT), 
+    .A(A), 
+    .B(B), 
+    .C(C), 
+    .D(D), 
+    .E(E)
+    );
+
+

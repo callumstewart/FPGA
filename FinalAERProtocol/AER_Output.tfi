@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+AER_Output instance_name (
+    .Bit0(Bit0), 
+    .Bit1(Bit1), 
+    .reset(reset), 
+    .ack(ack), 
+    .Ch1Up(Ch1Up), 
+    .Ch1Down(Ch1Down), 
+    .Ch2Up(Ch2Up), 
+    .Ch2Down(Ch2Down)
+    );
+
+

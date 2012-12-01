@@ -1,0 +1,731 @@
+Release 14.2 - xst P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: AER_Channel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "AER_Channel.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "AER_Channel"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : AER_Channel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Nor.v" in library work
+Compiling verilog file "Nand.v" in library work
+Module <Nor> compiled
+Compiling verilog file "X0.v" in library work
+Module <Nand> compiled
+Compiling verilog file "SenderControl.v" in library work
+Module <X0> compiled
+Compiling verilog file "One.v" in library work
+Module <SenderControl> compiled
+Compiling verilog file "Nought.v" in library work
+Module <One> compiled
+Compiling verilog file "ME.v" in library work
+Module <Nought> compiled
+Compiling verilog file "FsRefined.v" in library work
+Module <ME> compiled
+Compiling verilog file "Ch2Up_FSM.v" in library work
+Module <FsRefined> compiled
+Compiling verilog file "Ch2Down_FSM.v" in library work
+Module <Ch2Up_FSM> compiled
+Compiling verilog file "Ch1Up_FSM.v" in library work
+Module <Ch2Down_FSM> compiled
+Compiling verilog file "Ch1Down_FSM.v" in library work
+Module <Ch1Up_FSM> compiled
+Compiling verilog file "Sender.v" in library work
+Module <Ch1Down_FSM> compiled
+Compiling verilog file "Reciever.v" in library work
+Module <Sender> compiled
+Compiling verilog file "OutputDecoder.v" in library work
+Module <Reciever> compiled
+Compiling verilog file "BufferFe.v" in library work
+Module <OutputDecoder> compiled
+Compiling verilog file "Arbiter.v" in library work
+Module <BufferFe> compiled
+Compiling verilog file "Buffack.v" in library work
+Module <Arbiter> compiled
+Compiling verilog file "AER_Output.v" in library work
+Module <Buffack> compiled
+Compiling verilog file "AER_Input.v" in library work
+Module <AER_Output> compiled
+Compiling verilog file "AER_Channel.v" in library work
+Module <AER_Input> compiled
+Module <AER_Channel> compiled
+No errors in compilation
+Analysis of file <"AER_Channel.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <AER_Channel> in library <work>.
+
+Analyzing hierarchy for module <AER_Input> in library <work>.
+
+Analyzing hierarchy for module <AER_Output> in library <work>.
+
+Analyzing hierarchy for module <Buffack> in library <work>.
+
+Analyzing hierarchy for module <Arbiter> in library <work>.
+
+Analyzing hierarchy for module <Sender> in library <work>.
+
+Analyzing hierarchy for module <Reciever> in library <work>.
+
+Analyzing hierarchy for module <OutputDecoder> in library <work>.
+
+Analyzing hierarchy for module <BufferFe> in library <work>.
+
+Analyzing hierarchy for module <Ch1Up_FSM> in library <work>.
+
+Analyzing hierarchy for module <Ch1Down_FSM> in library <work>.
+
+Analyzing hierarchy for module <Ch2Up_FSM> in library <work>.
+
+Analyzing hierarchy for module <Ch2Down_FSM> in library <work>.
+
+Analyzing hierarchy for module <ME> in library <work>.
+
+Analyzing hierarchy for module <SenderControl> in library <work>.
+
+Analyzing hierarchy for module <FsRefined> in library <work>.
+
+Analyzing hierarchy for module <One> in library <work>.
+
+Analyzing hierarchy for module <Nought> in library <work>.
+
+Analyzing hierarchy for module <X0> in library <work>.
+
+Analyzing hierarchy for module <Fe> in library <work>.
+
+Analyzing hierarchy for module <Nand> in library <work>.
+
+Analyzing hierarchy for module <Nor> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <AER_Channel>.
+Module <AER_Channel> is correct for synthesis.
+ 
+Analyzing module <AER_Input> in library <work>.
+Module <AER_Input> is correct for synthesis.
+ 
+Analyzing module <Arbiter> in library <work>.
+Module <Arbiter> is correct for synthesis.
+ 
+Analyzing module <Ch1Up_FSM> in library <work>.
+Module <Ch1Up_FSM> is correct for synthesis.
+ 
+Analyzing module <Ch1Down_FSM> in library <work>.
+Module <Ch1Down_FSM> is correct for synthesis.
+ 
+Analyzing module <Ch2Up_FSM> in library <work>.
+Module <Ch2Up_FSM> is correct for synthesis.
+ 
+Analyzing module <Ch2Down_FSM> in library <work>.
+Module <Ch2Down_FSM> is correct for synthesis.
+ 
+Analyzing module <ME> in library <work>.
+Module <ME> is correct for synthesis.
+ 
+Analyzing module <Nand> in library <work>.
+Module <Nand> is correct for synthesis.
+ 
+Analyzing module <Nor> in library <work>.
+Module <Nor> is correct for synthesis.
+ 
+Analyzing module <Sender> in library <work>.
+Module <Sender> is correct for synthesis.
+ 
+Analyzing module <SenderControl> in library <work>.
+Module <SenderControl> is correct for synthesis.
+ 
+Analyzing module <FsRefined> in library <work>.
+Module <FsRefined> is correct for synthesis.
+ 
+Analyzing module <One> in library <work>.
+Module <One> is correct for synthesis.
+ 
+Analyzing module <Nought> in library <work>.
+Module <Nought> is correct for synthesis.
+ 
+Analyzing module <X0> in library <work>.
+Module <X0> is correct for synthesis.
+ 
+Analyzing module <Fe> in library <work>.
+Module <Fe> is correct for synthesis.
+ 
+Analyzing module <AER_Output> in library <work>.
+Module <AER_Output> is correct for synthesis.
+ 
+Analyzing module <Reciever> in library <work>.
+Module <Reciever> is correct for synthesis.
+ 
+Analyzing module <OutputDecoder> in library <work>.
+Module <OutputDecoder> is correct for synthesis.
+ 
+Analyzing module <BufferFe> in library <work>.
+WARNING:Xst:916 - "BufferFe.v" line 30: Delay is ignored for synthesis.
+Module <BufferFe> is correct for synthesis.
+ 
+Analyzing module <Buffack> in library <work>.
+WARNING:Xst:916 - "Buffack.v" line 28: Delay is ignored for synthesis.
+Module <Buffack> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Buffack>.
+    Related source file is "Buffack.v".
+Unit <Buffack> synthesized.
+
+
+Synthesizing Unit <Ch1Up_FSM>.
+    Related source file is "Ch1Up_FSM.v".
+Unit <Ch1Up_FSM> synthesized.
+
+
+Synthesizing Unit <Ch1Down_FSM>.
+    Related source file is "Ch1Down_FSM.v".
+Unit <Ch1Down_FSM> synthesized.
+
+
+Synthesizing Unit <Ch2Up_FSM>.
+    Related source file is "Ch2Up_FSM.v".
+Unit <Ch2Up_FSM> synthesized.
+
+
+Synthesizing Unit <Ch2Down_FSM>.
+    Related source file is "Ch2Down_FSM.v".
+Unit <Ch2Down_FSM> synthesized.
+
+
+Synthesizing Unit <Nand>.
+    Related source file is "Nand.v".
+Unit <Nand> synthesized.
+
+
+Synthesizing Unit <Nor>.
+    Related source file is "Nor.v".
+Unit <Nor> synthesized.
+
+
+Synthesizing Unit <SenderControl>.
+    Related source file is "SenderControl.v".
+Unit <SenderControl> synthesized.
+
+
+Synthesizing Unit <FsRefined>.
+    Related source file is "FsRefined.v".
+Unit <FsRefined> synthesized.
+
+
+Synthesizing Unit <One>.
+    Related source file is "One.v".
+Unit <One> synthesized.
+
+
+Synthesizing Unit <Nought>.
+    Related source file is "Nought.v".
+Unit <Nought> synthesized.
+
+
+Synthesizing Unit <X0>.
+    Related source file is "X0.v".
+Unit <X0> synthesized.
+
+
+Synthesizing Unit <Fe>.
+    Related source file is "Fe.v".
+Unit <Fe> synthesized.
+
+
+Synthesizing Unit <Reciever>.
+    Related source file is "Reciever.v".
+Unit <Reciever> synthesized.
+
+
+Synthesizing Unit <OutputDecoder>.
+    Related source file is "OutputDecoder.v".
+Unit <OutputDecoder> synthesized.
+
+
+Synthesizing Unit <BufferFe>.
+    Related source file is "BufferFe.v".
+Unit <BufferFe> synthesized.
+
+
+Synthesizing Unit <AER_Output>.
+    Related source file is "AER_Output.v".
+WARNING:Xst:646 - Signal <S1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <S0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_E> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_D> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Rec_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <NOT_USED> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <Fd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decode_D> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decode_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decode_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Decode_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <D1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <D0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <AER_Output> synthesized.
+
+
+Synthesizing Unit <Sender>.
+    Related source file is "Sender.v".
+WARNING:Xst:646 - Signal <Zero_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Zero_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <X0_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <X0_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <X0_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <One_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <One_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Fs_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Fs_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Fs_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Fe_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Fe_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Fe_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Control_E> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Control_D> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Control_C> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Control_B> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Control_A> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Sender> synthesized.
+
+
+Synthesizing Unit <ME>.
+    Related source file is "ME.v".
+Unit <ME> synthesized.
+
+
+Synthesizing Unit <Arbiter>.
+    Related source file is "Arbiter.v".
+WARNING:Xst:1780 - Signal <gnt2_2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <gnt1_1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch2UC> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch2UB> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch2UA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch2DC> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch2DB> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch2DA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch1UC> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch1UB> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch1UA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch1DC> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch1DB> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Ch1DA> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Arbiter> synthesized.
+
+
+Synthesizing Unit <AER_Input>.
+    Related source file is "AER_Input.v".
+Unit <AER_Input> synthesized.
+
+
+Synthesizing Unit <AER_Channel>.
+    Related source file is "AER_Channel.v".
+WARNING:Xst:1780 - Signal <ack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Bit1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Bit0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <AER_Channel> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit AER_Channel : the following signal(s) form a combinatorial loop: Output/Recieve/D.
+WARNING:Xst:2170 - Unit AER_Channel : the following signal(s) form a combinatorial loop: Output/Recieve/E.
+WARNING:Xst:2170 - Unit AER_Channel : the following signal(s) form a combinatorial loop: Output/Recieve/B.
+WARNING:Xst:2170 - Unit AER_Channel : the following signal(s) form a combinatorial loop: Output/Recieve/C.
+WARNING:Xst:2170 - Unit AER_Channel : the following signal(s) form a combinatorial loop: Output/Recieve/A.
+WARNING:Xst:2170 - Unit SenderControl : the following signal(s) form a combinatorial loop: B.
+WARNING:Xst:2170 - Unit SenderControl : the following signal(s) form a combinatorial loop: C.
+WARNING:Xst:2170 - Unit SenderControl : the following signal(s) form a combinatorial loop: D.
+WARNING:Xst:2170 - Unit SenderControl : the following signal(s) form a combinatorial loop: A.
+WARNING:Xst:2170 - Unit SenderControl : the following signal(s) form a combinatorial loop: E.
+WARNING:Xst:2170 - Unit OutputDecoder : the following signal(s) form a combinatorial loop: A.
+WARNING:Xst:2170 - Unit OutputDecoder : the following signal(s) form a combinatorial loop: B.
+WARNING:Xst:2170 - Unit OutputDecoder : the following signal(s) form a combinatorial loop: C.
+WARNING:Xst:2170 - Unit OutputDecoder : the following signal(s) form a combinatorial loop: D.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: bit0, Fs_bit0, Fs_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fe_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fe_FSM/C.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: One_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: X0_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fe_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: X0_FSM/C.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: X0_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: One_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Zero_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fs_FSM/A.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fs_FSM/B.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Fs_FSM/C.
+WARNING:Xst:2170 - Unit Sender : the following signal(s) form a combinatorial loop: Zero_FSM/B.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: req2_1, req2_2, Ch2Down_FSM/B, req2, MutualExclusion/SR2/c_and0000, MutualExclusion/SR1/c_and0000, go1, req1_1, Ch1Up_FSM/B, go, Ch2Up_FSM/B.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: req2_1.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: req2_2.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: Ch2Down_FSM/B.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: Ch2Up_FSM/C.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: Ch2Down_FSM/C.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: Ch1Down_FSM/C.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: MutualExclusion/SR1/c_and0000.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: req1_1.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: Ch1Down_FSM/B.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: req1_2.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: Ch1Up_FSM/C.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: Ch1Up_FSM/B.
+WARNING:Xst:2170 - Unit Arbiter : the following signal(s) form a combinatorial loop: Ch2Up_FSM/B.
+
+Optimizing unit <AER_Channel> ...
+
+Optimizing unit <SenderControl> ...
+
+Optimizing unit <OutputDecoder> ...
+
+Optimizing unit <Sender> ...
+
+Optimizing unit <Arbiter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block AER_Channel, actual ratio is 13.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : AER_Channel.ngr
+Top Level Output File Name         : AER_Channel
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 234
+#      GND                         : 1
+#      LUT2                        : 29
+#      LUT3                        : 30
+#      LUT4                        : 131
+#      MUXF5                       : 42
+#      VCC                         : 1
+# IO Buffers                       : 9
+#      IBUF                        : 5
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                      111  out of    960    11%  
+ Number of 4 input LUTs:                190  out of   1920     9%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of     83    10%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 101.588ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16292858508243 / 3
+-------------------------------------------------------------------------
+Delay:               101.588ns (Levels of Logic = 94)
+  Source:            reset (PAD)
+  Destination:       Ch2Up_Out (PAD)
+
+  Data Path: reset to Ch2Up_Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            59   1.106   1.232  reset_IBUF (reset_IBUF)
+     LUT4:I0->O            1   0.612   0.000  Input/Arbitration/Ch2Down_FSM/C1 (Input/Arbitration/Ch2Down_FSM/C1)
+     MUXF5:I1->O           7   0.278   0.671  Input/Arbitration/Ch2Down_FSM/C_f5 (Input/Arbitration/Ch2Down_FSM/C)
+     LUT4:I1->O            1   0.612   0.387  Input/Arbitration/Ch2Down_FSM/B_SW0 (N72)
+     LUT4:I2->O            9   0.612   0.849  Input/Arbitration/Ch2Down_FSM/B (Input/Arbitration/Ch2Down_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  Input/Arbitration/Ch2Down_FSM/A2 (Input/Arbitration/Ch2Down_FSM/A1)
+     MUXF5:I0->O           9   0.278   0.766  Input/Arbitration/Ch2Down_FSM/A_f5 (Input/Arbitration/req2_2)
+     LUT4:I1->O            1   0.612   0.360  Input/Arbitration/Ch2Up_FSM/B_SW1 (N119)
+     LUT4:I3->O            8   0.612   0.795  Input/Arbitration/Ch2Up_FSM/B (Input/Arbitration/Ch2Up_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  Input/Arbitration/Ch2Up_FSM/A2 (Input/Arbitration/Ch2Up_FSM/A1)
+     MUXF5:I0->O           9   0.278   0.727  Input/Arbitration/Ch2Up_FSM/A_f5 (Input/Arbitration/req2_1)
+     LUT4:I2->O            1   0.612   0.509  Input/Arbitration/Ch21 (Input/Ch2wire)
+     LUT4:I0->O            1   0.612   0.426  Input/SenderChannel/ControlFSM/E6 (Input/SenderChannel/ControlFSM/E6)
+     LUT2:I1->O            1   0.612   0.426  Input/SenderChannel/ControlFSM/E7 (Input/SenderChannel/ControlFSM/E7)
+     LUT4:I1->O           20   0.612   0.937  Input/SenderChannel/ControlFSM/E87 (Input/SenderChannel/ControlFSM/E)
+     MUXF5:S->O            2   0.641   0.380  Input/SenderChannel/ControlFSM/Fe_sen_f5 (Input/SenderChannel/Fe_sen)
+     MUXF5:S->O            1   0.641   0.360  Input/SenderChannel/ControlFSM/A12_f5 (Input/SenderChannel/ControlFSM/A12)
+     LUT4:I3->O           15   0.612   0.867  Input/SenderChannel/ControlFSM/A44 (Input/SenderChannel/ControlFSM/A)
+     LUT4:I3->O            2   0.612   0.532  Input/SenderChannel/ControlFSM/Fe11 (Input/SenderChannel/ControlFSM/N8)
+     LUT4:I0->O            1   0.612   0.387  Input/SenderChannel/ControlFSM/Zero_sen1 (Input/SenderChannel/Zero_sen)
+     LUT4:I2->O            4   0.612   0.568  Input/SenderChannel/Zero_FSM/B (Input/SenderChannel/Zero_FSM/B)
+     LUT2:I1->O            1   0.612   0.426  Input/SenderChannel/Zero_FSM/A_SW0 (N81)
+     LUT4:I1->O            4   0.612   0.651  Input/SenderChannel/Zero_FSM/A (Input/SenderChannel/Zero_FSM/A)
+     LUT2:I0->O            2   0.612   0.532  Input/SenderChannel/Zero_FSM/Dt1 (Input/SenderChannel/Zero_d)
+     LUT4:I0->O            1   0.612   0.000  Input/SenderChannel/ControlFSM/D343 (Input/SenderChannel/ControlFSM/D343)
+     MUXF5:I0->O           1   0.278   0.426  Input/SenderChannel/ControlFSM/D34_f5 (Input/SenderChannel/ControlFSM/D34)
+     LUT3:I1->O           18   0.612   1.060  Input/SenderChannel/ControlFSM/D56 (Input/SenderChannel/ControlFSM/D)
+     LUT4:I0->O            2   0.612   0.383  Input/SenderChannel/ControlFSM/Fe21 (Input/SenderChannel/ControlFSM/N21)
+     LUT4:I3->O            1   0.612   0.387  Input/SenderChannel/ControlFSM/One_sen1 (Input/SenderChannel/One_sen)
+     LUT4:I2->O            4   0.612   0.568  Input/SenderChannel/One_FSM/B (Input/SenderChannel/One_FSM/B)
+     LUT2:I1->O            1   0.612   0.426  Input/SenderChannel/One_FSM/A_SW0 (N83)
+     LUT4:I1->O            4   0.612   0.651  Input/SenderChannel/One_FSM/A (Input/SenderChannel/One_FSM/A)
+     LUT2:I0->O            2   0.612   0.410  Input/SenderChannel/One_FSM/Dt1 (Input/SenderChannel/One_d)
+     LUT4:I2->O            1   0.612   0.000  Input/SenderChannel/ControlFSM/C331 (Input/SenderChannel/ControlFSM/C331)
+     MUXF5:I1->O           1   0.278   0.426  Input/SenderChannel/ControlFSM/C33_f5 (Input/SenderChannel/ControlFSM/C33)
+     LUT3:I1->O           20   0.612   1.089  Input/SenderChannel/ControlFSM/C78 (Input/SenderChannel/ControlFSM/C)
+     LUT3:I0->O            7   0.612   0.754  Input/SenderChannel/ControlFSM/E21 (Input/SenderChannel/ControlFSM/N6)
+     LUT3:I0->O            6   0.612   0.572  Input/SenderChannel/ControlFSM/Fs_sen1 (Input/Fs_sen)
+     LUT4:I3->O            1   0.612   0.000  Input/SenderChannel/Fs_FSM/B2 (Input/SenderChannel/Fs_FSM/B2)
+     MUXF5:I0->O           8   0.278   0.795  Input/SenderChannel/Fs_FSM/B_f5 (Input/SenderChannel/Fs_FSM/B)
+     LUT4:I0->O            1   0.612   0.426  Input/SenderChannel/Fs_FSM/A_SW1 (N95)
+     LUT4:I1->O            6   0.612   0.721  Input/SenderChannel/Fs_FSM/A (Input/SenderChannel/Fs_FSM/A)
+     LUT4:I0->O            1   0.612   0.000  Input/SenderChannel/ControlFSM/B611 (Input/SenderChannel/ControlFSM/B611)
+     MUXF5:I0->O           1   0.278   0.426  Input/SenderChannel/ControlFSM/B61_f5 (Input/SenderChannel/ControlFSM/B61)
+     LUT4:I1->O           20   0.612   1.089  Input/SenderChannel/ControlFSM/B80 (Input/SenderChannel/ControlFSM/B)
+     LUT4:I0->O            1   0.612   0.000  Input/SenderChannel/ControlFSM/X0_sen1 (Input/SenderChannel/ControlFSM/X0_sen)
+     MUXF5:I1->O           3   0.278   0.454  Input/SenderChannel/ControlFSM/X0_sen_f5 (Input/SenderChannel/X0_sen)
+     LUT4:I3->O            1   0.612   0.000  Input/SenderChannel/X0_FSM/B2 (Input/SenderChannel/X0_FSM/B2)
+     MUXF5:I0->O           9   0.278   0.849  Input/SenderChannel/X0_FSM/B_f5 (Input/SenderChannel/X0_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  Input/SenderChannel/X0_FSM/A2 (Input/SenderChannel/X0_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  Input/SenderChannel/X0_FSM/A_f5 (Input/SenderChannel/X0_FSM/A)
+     LUT4:I0->O            1   0.612   0.509  Input/SenderChannel/bit014 (Input/SenderChannel/bit014)
+     LUT4:I0->O            7   0.612   0.754  Input/SenderChannel/bit038 (bit0In)
+     LUT4:I0->O            1   0.612   0.000  Output/Recieve/E231 (Output/Recieve/E231)
+     MUXF5:I1->O           1   0.278   0.360  Output/Recieve/E23_f5 (Output/Recieve/E23)
+     LUT4:I3->O           18   0.612   1.060  Output/Recieve/E105 (Output/Recieve/E)
+     LUT4:I0->O            1   0.612   0.000  Output/Recieve/D182 (Output/Recieve/D182)
+     MUXF5:I0->O           1   0.278   0.387  Output/Recieve/D18_f5 (Output/Recieve/D18)
+     LUT4:I2->O            1   0.612   0.360  Output/Recieve/D36 (Output/Recieve/D36)
+     LUT4:I3->O           19   0.612   1.074  Output/Recieve/D131 (Output/Recieve/D)
+     LUT4:I0->O            1   0.612   0.000  Output/Recieve/A471 (Output/Recieve/A471)
+     MUXF5:I1->O           1   0.278   0.387  Output/Recieve/A47_f5 (Output/Recieve/A47)
+     LUT4:I2->O           22   0.612   1.058  Output/Recieve/A96 (Output/Recieve/A)
+     LUT4:I1->O            1   0.612   0.000  Output/Recieve/ACK1 (Output/Recieve/ACK)
+     MUXF5:I1->O           7   0.278   0.671  Output/Recieve/ACK_f5 (ackin)
+     LUT4:I1->O            8   0.612   0.673  Input/SenderChannel/Fe_FSM/C (Input/SenderChannel/Fe_FSM/C)
+     LUT4:I2->O            1   0.612   0.000  Input/SenderChannel/Fe_FSM/B2 (Input/SenderChannel/Fe_FSM/B2)
+     MUXF5:I0->O           9   0.278   0.849  Input/SenderChannel/Fe_FSM/B_f5 (Input/SenderChannel/Fe_FSM/B)
+     LUT4:I0->O            1   0.612   0.000  Input/SenderChannel/Fe_FSM/A2 (Input/SenderChannel/Fe_FSM/A2)
+     MUXF5:I0->O           7   0.278   0.754  Input/SenderChannel/Fe_FSM/A_f5 (Input/SenderChannel/Fe_FSM/A)
+     LUT4:I0->O            1   0.612   0.509  Input/SenderChannel/bit113 (Input/SenderChannel/bit113)
+     LUT4:I0->O            7   0.612   0.754  Input/SenderChannel/bit135 (bit1In)
+     LUT2:I0->O            1   0.612   0.509  Output/Recieve/C101 (Output/Recieve/C101)
+     LUT3:I0->O            1   0.612   0.000  Output/Recieve/C31_F (N131)
+     MUXF5:I0->O           1   0.278   0.426  Output/Recieve/C31 (Output/Recieve/C31)
+     LUT4:I1->O           22   0.612   1.141  Output/Recieve/C57 (Output/Recieve/C)
+     LUT3:I0->O            1   0.612   0.360  Output/Recieve/B14 (Output/Recieve/B14)
+     LUT4:I3->O            1   0.612   0.360  Output/Recieve/B33 (Output/Recieve/B33)
+     LUT4:I3->O           21   0.612   1.111  Output/Recieve/B84 (Output/Recieve/B)
+     LUT4:I0->O            3   0.612   0.520  Output/Recieve/X011 (N26)
+     LUT2:I1->O            3   0.612   0.481  Output/Recieve/ZERO_OUT1 (Output/Zero)
+     LUT4:I2->O            1   0.612   0.000  Output/Decode/B241 (Output/Decode/B241)
+     MUXF5:I1->O           1   0.278   0.360  Output/Decode/B24_f5 (Output/Decode/B24)
+     LUT4:I3->O           19   0.612   1.074  Output/Decode/B71 (Output/Decode/B)
+     LUT4:I0->O            1   0.612   0.000  Output/Decode/D561 (Output/Decode/D561)
+     MUXF5:I1->O           1   0.278   0.426  Output/Decode/D56_f5 (Output/Decode/D56)
+     LUT4:I1->O           15   0.612   1.016  Output/Decode/D74 (Output/Decode/D)
+     LUT4:I0->O            1   0.612   0.360  Output/Decode/C_SW1 (N116)
+     LUT4:I3->O           18   0.612   1.060  Output/Decode/C (Output/Decode/C)
+     LUT2:I0->O            4   0.612   0.651  Output/Decode/A221 (Output/Decode/N16)
+     LUT3:I0->O            1   0.612   0.426  Output/Decode/A70 (Output/Decode/A70)
+     LUT4:I1->O           17   0.612   1.045  Output/Decode/A89 (Output/Decode/A)
+     LUT3:I0->O            1   0.612   0.357  Output/Decode/Ch1Up1 (Ch1Up_Out_OBUF)
+     OBUF:I->O                 3.169          Ch1Up_Out_OBUF (Ch1Up_Out)
+    ----------------------------------------
+    Total                    101.588ns (54.291ns logic, 47.297ns route)
+                                       (53.4% logic, 46.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.99 secs
+ 
+--> 
+
+Total memory usage is 215500 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   94 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
